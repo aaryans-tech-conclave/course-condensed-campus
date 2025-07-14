@@ -18,6 +18,20 @@ export default {
 			}
 		},
 		extend: {
+			fontSize: {
+				'xs': ['0.75rem', { lineHeight: '1rem' }],
+				'sm': ['0.8rem', { lineHeight: '1.25rem' }],
+				'base': ['0.85rem', { lineHeight: '1.3rem' }],
+				'lg': ['0.95rem', { lineHeight: '1.4rem' }],
+			},
+			spacing: {
+				'1': '0.15rem',
+				'2': '0.35rem',
+				'3': '0.6rem',
+				'4': '0.8rem',
+				'6': '1.2rem',
+				'8': '1.6rem',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
