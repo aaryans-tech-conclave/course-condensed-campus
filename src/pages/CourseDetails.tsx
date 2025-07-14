@@ -3,7 +3,7 @@ import { courses } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Users, Clock, MapPin, BookOpen, Calendar, Award } from "lucide-react";
+import { Users, Clock, MapPin, BookOpen, Calendar, Award } from "lucide-react";
 
 export default function CourseDetails() {
   const { courseId } = useParams();
@@ -13,35 +13,22 @@ export default function CourseDetails() {
   
   if (!course) {
     return (
-      <div className="min-h-screen bg-background p-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-lg font-semibold mb-2">Course Not Found</h1>
-            <p className="text-sm text-muted-foreground mb-4">The requested course could not be found.</p>
-            <Button variant="outline" size="sm" onClick={() => navigate("/")}>
-              <ArrowLeft className="w-3 h-3" />
-              Back to Courses
-            </Button>
-          </div>
+      <div className="max-w-4xl mx-auto p-4">
+        <div className="text-center">
+          <h1 className="text-lg font-semibold mb-2">Course Not Found</h1>
+          <p className="text-sm text-muted-foreground mb-4">The requested course could not be found.</p>
+          <Button variant="outline" size="sm" onClick={() => navigate("/")}>
+            Back to Courses
+          </Button>
         </div>
       </div>
     );
   }
   
   return (
-    <div className="min-h-screen bg-background">
+    <div>
       <div className="border-b bg-card">
         <div className="max-w-6xl mx-auto p-3">
-          <Button 
-            variant="ghost" 
-            size="sm" 
-            onClick={() => navigate("/")}
-            className="mb-2"
-          >
-            <ArrowLeft className="w-3 h-3" />
-            Back to Courses
-          </Button>
-          
           <div className="flex items-start gap-3">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
