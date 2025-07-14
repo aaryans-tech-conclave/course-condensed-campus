@@ -12,6 +12,7 @@ const Index = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDepartment, setSelectedDepartment] = useState("");
+  const [selectedSemester, setSelectedSemester] = useState<number | null>(null);
   
   const departments = useMemo(() => {
     const depts = Array.from(new Set(courses.map(course => course.department)));
@@ -28,9 +29,12 @@ const Index = () => {
       const matchesDepartment = selectedDepartment === "" || 
         course.department === selectedDepartment;
       
-      return matchesSearch && matchesDepartment;
+      const matchesSemester = selectedSemester === null || 
+        course.semester === selectedSemester;
+      
+      return matchesSearch && matchesDepartment && matchesSemester;
     });
-  }, [searchQuery, selectedDepartment]);
+  }, [searchQuery, selectedDepartment, selectedSemester]);
   
   const handleViewDetails = (courseId: string) => {
     navigate(`/course/${courseId}`);
@@ -44,6 +48,34 @@ const Index = () => {
           <div className="flex items-center gap-3 mb-3">
             <BookOpen className="w-5 h-5 text-primary" />
             <h1 className="text-lg font-semibold">University Course Catalog</h1>
+          </div>
+          
+          {/* Semester Navigation */}
+          <div className="mb-3">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-medium text-muted-foreground">Semester:</span>
+            </div>
+            <div className="flex flex-wrap gap-1">
+              <Button
+                variant={selectedSemester === null ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedSemester(null)}
+                className="h-6 px-2 text-xs"
+              >
+                All
+              </Button>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map(sem => (
+                <Button
+                  key={sem}
+                  variant={selectedSemester === sem ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setSelectedSemester(sem)}
+                  className="h-6 px-2 text-xs"
+                >
+                  {sem}
+                </Button>
+              ))}
+            </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-3">
@@ -142,6 +174,7 @@ const Index = () => {
                   onClick={() => {
                     setSearchQuery("");
                     setSelectedDepartment("");
+                    setSelectedSemester(null);
                   }}
                 >
                   Clear Filters
