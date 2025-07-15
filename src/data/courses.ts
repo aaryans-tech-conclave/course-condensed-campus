@@ -37,7 +37,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Amitabha Bhattacharya",
     description: "",
     schedule: {
       days: [],
@@ -63,7 +63,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Aniket Singha",
     description: "",
     schedule: {
       days: [],
@@ -84,7 +84,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Tarun Kanti Bhattacharyya",
     description: "",
     schedule: {
       days: [],
@@ -122,7 +122,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Debashis Sen",
     description: "",
     schedule: {
       days: [],
@@ -143,7 +143,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Prasanta Kumar Guha",
     description: "",
     schedule: {
       days: [],
@@ -164,7 +164,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Anindya Sundar Dhar",
     description: "",
     schedule: {
       days: [],
@@ -206,7 +206,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Mrityunjoy Chakraborty",
     description: "",
     schedule: {
       days: [],
@@ -227,7 +227,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Goutam Saha",
     description: "",
     schedule: {
       days: [],
@@ -248,7 +248,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Sarang Pendharker",
     description: "",
     schedule: {
       days: [],
@@ -269,7 +269,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Subhadip Mukherjee",
     description: "",
     schedule: {
       days: [],
@@ -290,7 +290,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Goutam Saha",
     description: "",
     schedule: {
       days: [],
@@ -311,7 +311,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Ritwik Kumar Layek",
     description: "",
     schedule: {
       days: [],
@@ -332,7 +332,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Sharba Bandyopadhyay",
     description: "",
     schedule: {
       days: [],
@@ -353,7 +353,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Goutam Das",
     description: "",
     schedule: {
       days: [],
@@ -374,7 +374,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Rajat Roy",
     description: "",
     schedule: {
       days: [],
@@ -395,7 +395,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Arijit De",
     description: "",
     schedule: {
       days: [],
@@ -416,7 +416,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Debashis Sen",
     description: "",
     schedule: {
       days: [],
@@ -437,7 +437,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Goutam Saha",
     description: "",
     schedule: {
       days: [],
@@ -458,7 +458,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Jithin R",
     description: "",
     schedule: {
       days: [],
@@ -479,7 +479,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Amitalok Jayant Budkuley",
     description: "",
     schedule: {
       days: [],
@@ -500,7 +500,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "",
+    instructor: "Prabir Kumar Biswas",
     description: "",
     schedule: {
       days: [],
@@ -521,7 +521,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "",
+    instructor: "Gourab Dutta",
     description: "",
     schedule: {
       days: [],
@@ -542,7 +542,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "",
+    instructor: "Arijit De",
     description: "",
     schedule: {
       days: [],
@@ -563,7 +563,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Saumik Bhattacharya",
     description: "",
     schedule: {
       days: [],
@@ -584,7 +584,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Jithin R",
     description: "",
     schedule: {
       days: [],
@@ -605,7 +605,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "",
+    instructor: "Gourab Dutta",
     description: "",
     schedule: {
       days: [],
@@ -626,7 +626,7 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "",
+    instructor: "Prasanta Kumar Guha",
     description: "",
     schedule: {
       days: [],
