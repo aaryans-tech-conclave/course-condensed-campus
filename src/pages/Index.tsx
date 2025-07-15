@@ -88,7 +88,7 @@ const Index = () => {
         >
           <CardContent className="p-4">
             <div className="space-y-1">
-              <div className="font-mono text-sm font-medium">
+              <div className="font-mono text-sm font-medium text-primary">
                 {course.code}
               </div>
               <div className="text-sm text-muted-foreground">

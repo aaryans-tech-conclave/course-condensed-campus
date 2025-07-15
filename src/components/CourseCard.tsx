@@ -16,7 +16,7 @@ export function CourseCard({ course, onViewDetails }: CourseCardProps) {
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2 mb-1">
-              <Badge variant="secondary" className="text-xs font-mono">
+              <Badge variant="secondary" className="text-xs font-mono text-primary">
                 {course.code}
               </Badge>
               <Badge variant="outline" className="text-xs">
