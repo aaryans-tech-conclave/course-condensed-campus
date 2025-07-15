@@ -22,9 +22,11 @@ export function CourseCard({ course, onViewDetails }: CourseCardProps) {
               <Badge variant="outline" className="text-xs">
                 {course.credits} credits
               </Badge>
-              <Badge variant="outline" className="text-xs">
-                {course.season}
-              </Badge>
+              {course.season && course.season !== "" && (
+                <Badge variant="outline" className="text-xs">
+                  {course.season}
+                </Badge>
+              )}
             </div>
             <h3 className="text-sm font-medium leading-tight mb-1 line-clamp-2">
               {course.name}
@@ -35,24 +37,32 @@ export function CourseCard({ course, onViewDetails }: CourseCardProps) {
       </CardHeader>
       
       <CardContent className="pt-0 space-y-2">
-        <div className="flex items-center gap-1 text-xs text-muted-foreground">
-          <Users className="w-3 h-3" />
-          <span>{course.instructor}</span>
-        </div>
+        {course.instructor && course.instructor !== "" && (
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Users className="w-3 h-3" />
+            <span>{course.instructor}</span>
+          </div>
+        )}
         
-        <div className="flex items-center gap-1 text-xs text-muted-foreground">
-          <Clock className="w-3 h-3" />
-          <span>{course.schedule.days.join(", ")} • {course.schedule.time}</span>
-        </div>
+        {course.schedule?.days && course.schedule.days.length > 0 && course.schedule?.time && (
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Clock className="w-3 h-3" />
+            <span>{course.schedule.days.join(", ")} • {course.schedule.time}</span>
+          </div>
+        )}
         
-        <div className="flex items-center gap-1 text-xs text-muted-foreground">
-          <MapPin className="w-3 h-3" />
-          <span>{course.schedule.location}</span>
-        </div>
+        {course.schedule?.location && course.schedule.location !== "" && (
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <MapPin className="w-3 h-3" />
+            <span>{course.schedule.location}</span>
+          </div>
+        )}
         
-        <p className="text-xs text-muted-foreground line-clamp-2 mt-2">
-          {course.description}
-        </p>
+        {course.description && course.description !== "" && (
+          <p className="text-xs text-muted-foreground line-clamp-2 mt-2">
+            {course.description}
+          </p>
+        )}
         
         {course.prerequisites && course.prerequisites.length > 0 && (
           <div className="flex items-center gap-1 text-xs text-muted-foreground">

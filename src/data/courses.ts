@@ -4,329 +4,435 @@ export interface Course {
   name: string;
   department: string;
   credits: number;
-  season: "Spring" | "Autumn";
-  instructor: string;
-  description: string;
-  prerequisites?: string[];
+  season?: "Spring" | "Autumn" | "";  // Made optional and allow empty string
+  instructor?: string;  // Made optional
+  description?: string;  // Made optional
   schedule: {
-    days: string[];
-    time: string;
-    location: string;
+    days?: string[];  // Made optional
+    time?: string;    // Made optional
+    location?: string;  // Made optional
   };
 }
 
 export const courses: Course[] = [
-  // Semester 1 - Autumn
   {
-    id: "cs101",
-    code: "CS 101",
-    name: "Introduction to Computer Science",
-    department: "Computer Science",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Dr. Sarah Chen",
-    description: "Fundamental concepts of computer science including programming basics, algorithms, and problem-solving techniques.",
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "10:00 AM - 11:00 AM",
-      location: "Room 204, Science Building"
-    }
-  },
-  {
-    id: "math151",
-    code: "MATH 151",
-    name: "Calculus I",
-    department: "Mathematics",
+    id: "EC21203",
+    code: "EC21203",
+    name: "NETWORK THEORY",
+    department: "Electronics and Electrical Communication Engineering",
     credits: 4,
-    season: "Autumn",
-    instructor: "Dr. Elena Vasquez",
-    description: "Limits, derivatives, and applications of differential calculus.",
+    season: "",
+    instructor: "Amitabha Bhattacharya",
+    description: "",
     schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "9:00 AM - 10:00 AM",
-      location: "Room 105, Math Building"
+      days: [],
+      time: "",
+      location: ""
     }
   },
   {
-    id: "eng102",
-    code: "ENG 102",
-    name: "Technical Writing",
-    department: "English",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Prof. Lisa Thompson",
-    description: "Development of technical writing skills for scientific and engineering communication.",
-    schedule: {
-      days: ["Mon", "Wed"],
-      time: "1:00 PM - 2:30 PM",
-      location: "Room 150, Liberal Arts Building"
-    }
-  },
-
-  // Semester 2 - Spring
-  {
-    id: "cs201",
-    code: "CS 201",
-    name: "Data Structures and Algorithms",
-    department: "Computer Science",
+    id: "EC21205",
+    code: "EC21205",
+    name: "SEMICONDUCTOR DEVICES",
+    department: "Electronics and Electrical Communication Engineering",
     credits: 4,
-    season: "Spring",
-    instructor: "Prof. Michael Rodriguez",
-    description: "Study of abstract data types, algorithms for searching and sorting, and complexity analysis.",
-    prerequisites: ["CS 101"],
+    season: "",
+    instructor: "Aniket Singha",
+    description: "",
     schedule: {
-      days: ["Tue", "Thu"],
-      time: "2:00 PM - 4:00 PM",
-      location: "Room 301, Science Building"
+      days: [],
+      time: "",
+      location: ""
     }
   },
   {
-    id: "phys201",
-    code: "PHYS 201",
-    name: "General Physics I",
-    department: "Physics",
+    id: "EC21207",
+    code: "EC21207",
+    name: "ANALOG ELECTRONIC CIRCUITS",
+    department: "Electronics and Electrical Communication Engineering",
     credits: 4,
-    season: "Spring",
-    instructor: "Dr. James Wilson",
-    description: "Mechanics, thermodynamics, and wave motion with laboratory component.",
-    prerequisites: ["MATH 151"],
+    season: "",
+    instructor: "Tarun Kanti Bhattacharyya",
+    description: "",
     schedule: {
-      days: ["Tue", "Thu"],
-      time: "11:00 AM - 1:00 PM",
-      location: "Room 201, Physics Building"
+      days: [],
+      time: "",
+      location: ""
     }
   },
   {
-    id: "math251",
-    code: "MATH 251",
-    name: "Calculus II",
-    department: "Mathematics",
-    credits: 4,
-    season: "Spring",
-    instructor: "Dr. Robert Martinez",
-    description: "Integration techniques, applications of integrals, and infinite series.",
-    prerequisites: ["MATH 151"],
-    schedule: {
-      days: ["Tue", "Thu"],
-      time: "9:00 AM - 11:00 AM",
-      location: "Room 107, Math Building"
-    }
-  },
-
-  // Semester 3 - Autumn
-  {
-    id: "cs301",
-    code: "CS 301",
-    name: "Database Systems",
-    department: "Computer Science",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Dr. Kevin Park",
-    description: "Database design, SQL, normalization, and database management systems.",
-    prerequisites: ["CS 201"],
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "3:00 PM - 4:00 PM",
-      location: "Room 305, Science Building"
-    }
-  },
-  {
-    id: "chem101",
-    code: "CHEM 101",
-    name: "General Chemistry I",
-    department: "Chemistry",
-    credits: 4,
-    season: "Autumn",
-    instructor: "Dr. Amanda Foster",
-    description: "Atomic structure, chemical bonding, stoichiometry, and chemical reactions.",
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "11:00 AM - 12:00 PM",
-      location: "Room 102, Chemistry Building"
-    }
-  },
-  {
-    id: "stat201",
-    code: "STAT 201",
-    name: "Introduction to Statistics",
-    department: "Statistics",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Dr. Jennifer Lee",
-    description: "Descriptive statistics, probability distributions, hypothesis testing, and regression analysis.",
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "2:00 PM - 3:00 PM",
-      location: "Room 201, Math Building"
-    }
-  },
-
-  // Semester 4 - Spring
-  {
-    id: "cs302",
-    code: "CS 302",
-    name: "Computer Networks",
-    department: "Computer Science",
-    credits: 3,
-    season: "Spring",
-    instructor: "Dr. Anna Johnson",
-    description: "Network protocols, TCP/IP, network security, and distributed systems.",
-    prerequisites: ["CS 201"],
-    schedule: {
-      days: ["Mon", "Wed"],
-      time: "2:00 PM - 3:30 PM",
-      location: "Room 306, Science Building"
-    }
-  },
-  {
-    id: "math301",
-    code: "MATH 301",
-    name: "Linear Algebra",
-    department: "Mathematics",
-    credits: 3,
-    season: "Spring",
-    instructor: "Dr. Thomas Brown",
-    description: "Vector spaces, matrices, eigenvalues, and linear transformations.",
-    prerequisites: ["MATH 251"],
-    schedule: {
-      days: ["Tue", "Thu"],
-      time: "10:00 AM - 11:30 AM",
-      location: "Room 108, Math Building"
-    }
-  },
-
-  // Semester 5 - Autumn
-  {
-    id: "cs401",
-    code: "CS 401",
-    name: "Software Engineering",
-    department: "Computer Science",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Prof. David Kim",
-    description: "Software development lifecycle, project management, and team-based software development.",
-    prerequisites: ["CS 301"],
-    schedule: {
-      days: ["Tue", "Thu"],
-      time: "3:30 PM - 5:00 PM",
-      location: "Room 310, Science Building"
-    }
-  },
-  {
-    id: "cs403",
-    code: "CS 403",
-    name: "Operating Systems",
-    department: "Computer Science",
-    credits: 4,
-    season: "Autumn",
-    instructor: "Dr. Rachel Green",
-    description: "Process management, memory management, file systems, and system calls.",
-    prerequisites: ["CS 201"],
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "11:00 AM - 12:00 PM",
-      location: "Room 307, Science Building"
-    }
-  },
-
-  // Semester 6 - Spring
-  {
-    id: "cs404",
-    code: "CS 404",
-    name: "Machine Learning",
-    department: "Computer Science",
-    credits: 3,
-    season: "Spring",
-    instructor: "Dr. Alex Zhang",
-    description: "Supervised and unsupervised learning, neural networks, and data mining techniques.",
-    prerequisites: ["STAT 201", "MATH 301"],
-    schedule: {
-      days: ["Tue", "Thu"],
-      time: "1:00 PM - 2:30 PM",
-      location: "Room 308, Science Building"
-    }
-  },
-  {
-    id: "cs405",
-    code: "CS 405",
-    name: "Web Development",
-    department: "Computer Science",
-    credits: 3,
-    season: "Spring",
-    instructor: "Prof. Maria Lopez",
-    description: "Full-stack web development, modern frameworks, and web security principles.",
-    prerequisites: ["CS 301"],
-    schedule: {
-      days: ["Mon", "Wed"],
-      time: "3:00 PM - 4:30 PM",
-      location: "Room 309, Science Building"
-    }
-  },
-
-  // Semester 7 - Autumn
-  {
-    id: "cs501",
-    code: "CS 501",
-    name: "Advanced Algorithms",
-    department: "Computer Science",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Dr. Steven Wang",
-    description: "Advanced algorithmic techniques, graph algorithms, and computational complexity.",
-    prerequisites: ["CS 201", "MATH 301"],
-    schedule: {
-      days: ["Tue", "Thu"],
-      time: "2:00 PM - 3:30 PM",
-      location: "Room 311, Science Building"
-    }
-  },
-  {
-    id: "cs502",
-    code: "CS 502",
-    name: "Computer Graphics",
-    department: "Computer Science",
-    credits: 3,
-    season: "Autumn",
-    instructor: "Dr. Lisa Chen",
-    description: "3D graphics, rendering techniques, and computer animation principles.",
-    prerequisites: ["MATH 301"],
-    schedule: {
-      days: ["Mon", "Wed"],
-      time: "4:00 PM - 5:30 PM",
-      location: "Room 312, Science Building"
-    }
-  },
-
-  // Semester 8 - Spring
-  {
-    id: "cs601",
-    code: "CS 601",
-    name: "Capstone Project",
-    department: "Computer Science",
-    credits: 4,
-    season: "Spring",
-    instructor: "Prof. John Smith",
-    description: "Independent research project demonstrating mastery of computer science concepts.",
-    prerequisites: ["CS 401", "CS 404"],
-    schedule: {
-      days: ["Mon", "Wed", "Fri"],
-      time: "2:00 PM - 4:00 PM",
-      location: "Room 313, Science Building"
-    }
-  },
-  {
-    id: "cs602",
-    code: "CS 602",
-    name: "Professional Ethics",
-    department: "Computer Science",
+    id: "EC29203",
+    code: "EC29203",
+    name: "NETWORK THEORY LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
     credits: 2,
-    season: "Spring",
-    instructor: "Dr. Sarah Wilson",
-    description: "Ethical issues in computing, professional responsibility, and social impact of technology.",
+    season: "",
+    instructor: "Debashis Sen",
+    description: "",
     schedule: {
-      days: ["Tue"],
-      time: "1:00 PM - 3:00 PM",
-      location: "Room 314, Science Building"
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC29205",
+    code: "EC29205",
+    name: "DEVICES LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Prasanta Kumar Guha",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC29207",
+    code: "EC29207",
+    name: "ANALOG CIRCUITS LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Anindya Sundar Dhar",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "MA20205",
+    code: "MA20205",
+    name: "PROBABILITY AND STATISTICS",
+    department: "Mathematics",
+    credits: 3,
+    season: "",
+    instructor: "",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC21204",
+    code: "EC21204",
+    name: "LINEAR ALGEBRA AND OPTIMIZATION MODELS",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Mrityunjoy Chakraborty",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC21202",
+    code: "EC21202",
+    name: "DIGITAL ELECTRONIC CIRCUITS",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Goutam Saha",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC21206",
+    code: "EC21206",
+    name: "ELECTROMAGNETIC ENGINEERING",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Sarang Pendharker",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC21208",
+    code: "EC21208",
+    name: "SIGNALS AND SYSTEMS",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Subhadip Mukherjee",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC29202",
+    code: "EC29202",
+    name: "DIGITAL CIRCUITS LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Goutam Saha",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC21210",
+    code: "EC21210",
+    name: "SYSTEMS AND CONTROL",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Ritwik Kumar Layek",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39201",
+    code: "EC39201",
+    name: "DSP LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Sharba Bandyopadhyay",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31203",
+    code: "EC31203",
+    name: "COMMUNICATION-I",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Goutam Das",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39005",
+    code: "EC39005",
+    name: "MICROWAVE LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Rajat Roy",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31005",
+    code: "EC31005",
+    name: "RF & MICROWAVE ENGINEERING",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Arijit De",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31205",
+    code: "EC31205",
+    name: "ALGORITHMS",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Debashis Sen",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31201",
+    code: "EC31201",
+    name: "DIGITAL SIGNAL PROCESSING-I",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Goutam Saha",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39001",
+    code: "EC39001",
+    name: "ANALOG COMMUNICATIONS LAB.",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Jithin R",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31204",
+    code: "EC31204",
+    name: "COMMUNICATION-II",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Amitalok Jayant Budkuley",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC30202",
+    code: "EC30202",
+    name: "COMPUTER ARCHITECTURE",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 3,
+    season: "",
+    instructor: "Prabir Kumar Biswas",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31004",
+    code: "EC31004",
+    name: "VLSI ENGG.",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 3,
+    season: "",
+    instructor: "Gourab Dutta",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC31202",
+    code: "EC31202",
+    name: "DIGITAL SIGNAL PROCESSING-II",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 4,
+    season: "",
+    instructor: "Arijit De",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39202",
+    code: "EC39202",
+    name: "EMBEDDED SYSTEMS LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Saumik Bhattacharya",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39002",
+    code: "EC39002",
+    name: "DIGITAL COMMUNICATION LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Jithin R",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC39004",
+    code: "EC39004",
+    name: "VLSI LABORATORY",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 2,
+    season: "",
+    instructor: "Gourab Dutta",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    }
+  },
+  {
+    id: "EC60294",
+    code: "EC60294",
+    name: "NANOELECTRONICS",
+    department: "Electronics and Electrical Communication Engineering",
+    credits: 3,
+    season: "",
+    instructor: "Prasanta Kumar Guha",
+    description: "",
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
     }
   }
 ];

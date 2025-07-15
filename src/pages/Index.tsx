@@ -38,6 +38,16 @@ const Index = () => {
     navigate(`/course/${courseId}`);
   };
   
+  // Calculate unique instructors excluding empty values
+  const uniqueInstructors = useMemo(() => {
+    const instructors = new Set(
+      filteredCourses
+        .map(c => c.instructor)
+        .filter(instructor => instructor && instructor.trim() !== "")
+    );
+    return instructors.size;
+  }, [filteredCourses]);
+  
   return (
     <div>
       {/* Semester Tabs */}
@@ -124,7 +134,7 @@ const Index = () => {
             <CardContent className="p-3">
               <div className="text-center">
                 <div className="text-lg font-semibold">
-                  {Array.from(new Set(filteredCourses.map(c => c.instructor))).length}
+                  {uniqueInstructors}
                 </div>
                 <div className="text-xs text-muted-foreground">Instructors</div>
               </div>
