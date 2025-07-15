@@ -38,9 +38,6 @@ export default function CourseDetails() {
                 <Badge variant="outline" className="text-xs">
                   {course.credits} credits
                 </Badge>
-                <Badge variant="outline" className="text-xs">
-                  Semester {course.semester} - {course.season}
-                </Badge>
               </div>
               <h1 className="text-xl font-semibold mb-1">{course.name}</h1>
               <p className="text-sm text-muted-foreground">{course.department}</p>
@@ -136,7 +133,7 @@ export default function CourseDetails() {
                   <span className="font-medium">Credits:</span> {course.credits}
                 </div>
                 <div className="text-sm">
-                  <span className="font-medium">Semester:</span> {course.semester} - {course.season}
+                  <span className="font-medium">Season:</span> {course.season}
                 </div>
                 <div className="text-sm">
                   <span className="font-medium">Department:</span> {course.department}

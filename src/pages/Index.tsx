@@ -7,19 +7,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Search, BookOpen, Users, Filter } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Index = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDepartment, setSelectedDepartment] = useState("");
-  const [selectedSemester, setSelectedSemester] = useState<number | null>(null);
   
   const departments = useMemo(() => {
     const depts = Array.from(new Set(courses.map(course => course.department)));
     return depts.sort();
   }, []);
   
-  // Filter only by search and department (NOT by semester)
+  // Filter only by search and department
   const filteredCourses = useMemo(() => {
     return courses.filter(course => {
       const matchesSearch = searchQuery === "" || 
@@ -40,33 +40,31 @@ const Index = () => {
   
   return (
     <div>
-      {/* Semester Tabs - Visual only, no filtering */}
+      {/* Semester Tabs */}
       <div className="border-b bg-muted/50">
         <div className="max-w-6xl mx-auto px-4 py-2">
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-muted-foreground mr-2">Semester:</span>
-            <div className="flex flex-wrap gap-1">
-              <Button
-                variant={selectedSemester === null ? "default" : "outline"}
-                size="sm"
-                onClick={() => setSelectedSemester(null)}
-                className="h-7 px-3 text-xs"
-              >
-                All
-              </Button>
-              {[1, 2, 3, 4, 5, 6, 7, 8].map(sem => (
-                <Button
-                  key={sem}
-                  variant={selectedSemester === sem ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setSelectedSemester(sem)}
-                  className="h-7 px-3 text-xs"
-                >
-                  {sem}
-                </Button>
+          <Tabs defaultValue="3" className="w-full">
+            <TabsList className="grid grid-cols-6 w-full">
+              {[3, 4, 5, 6, 7, 8].map(sem => (
+                <TabsTrigger key={sem} value={sem.toString()} className="text-primary">
+                  Semester {sem}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            
+            {/* Tab Content Area */}
+            <div className="mt-4 mb-2">
+              {[3, 4, 5, 6, 7, 8].map(sem => (
+                <TabsContent key={sem} value={sem.toString()} className="mt-0">
+                  <Card>
+                    <CardContent className="p-4">
+                      <p className="text-sm text-center">Semester {sem}</p>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
               ))}
             </div>
-          </div>
+          </Tabs>
         </div>
       </div>
 
