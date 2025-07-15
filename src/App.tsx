@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/course-condensed-campus">
         <div className="min-h-screen bg-background">
           <Header />
           <Routes>
