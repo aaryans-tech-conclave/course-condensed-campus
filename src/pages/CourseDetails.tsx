@@ -3,7 +3,7 @@ import { courses } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Clock, MapPin, BookOpen, Calendar, Award } from "lucide-react";
+import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link } from "lucide-react";
 
 export default function CourseDetails() {
   const { courseId } = useParams();
@@ -32,7 +32,7 @@ export default function CourseDetails() {
           <div className="flex items-start gap-3">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                <Badge variant="secondary" className="text-sm font-mono">
+                <Badge variant="secondary" className="text-sm font-mono text-primary">
                   {course.code}
                 </Badge>
                 <Badge variant="outline" className="text-xs">
@@ -48,7 +48,64 @@ export default function CourseDetails() {
       
       <div className="max-w-6xl mx-auto p-4">
         <div className="grid gap-4 md:grid-cols-3">
+          {/* Left and Middle columns combined - Course Resources and Description */}
           <div className="md:col-span-2 space-y-4">
+            {/* Resource Buttons */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              {course.textbook && (
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="justify-start"
+                  onClick={() => window.open(course.textbook, '_blank')}
+                >
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  Textbook
+                  <ExternalLink className="w-3 h-3 ml-auto" />
+                </Button>
+              )}
+              
+              {course.otherReferenceMaterial && (
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="justify-start"
+                  onClick={() => window.open(course.otherReferenceMaterial, '_blank')}
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  Reference
+                  <ExternalLink className="w-3 h-3 ml-auto" />
+                </Button>
+              )}
+              
+              {course.notes && (
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="justify-start"
+                  onClick={() => window.open(course.notes, '_blank')}
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  Notes
+                  <ExternalLink className="w-3 h-3 ml-auto" />
+                </Button>
+              )}
+              
+              {course.questionPapers && (
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="justify-start"
+                  onClick={() => window.open(course.questionPapers, '_blank')}
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  Papers
+                  <ExternalLink className="w-3 h-3 ml-auto" />
+                </Button>
+              )}
+            </div>
+            
+            {/* Course Description */}
             {course.description && course.description !== "" && (
               <Card>
                 <CardHeader className="pb-3">
@@ -60,6 +117,7 @@ export default function CourseDetails() {
               </Card>
             )}
             
+            {/* Prerequisites */}
             {course.prerequisites && course.prerequisites.length > 0 && (
               <Card>
                 <CardHeader className="pb-3">
@@ -79,8 +137,54 @@ export default function CourseDetails() {
                 </CardContent>
               </Card>
             )}
+            
+            {/* Note and Additional Links Cards - Full Width */}
+            <div className="grid gap-4 md:grid-cols-2">
+              {course.note && course.note !== "" && (
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center gap-2">
+                      <FileText className="w-4 h-4" />
+                      Note
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm leading-relaxed">{course.note}</p>
+                  </CardContent>
+                </Card>
+              )}
+              
+              {course.additionalLinks && course.additionalLinks.length > 0 && (
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base flex items-center gap-2">
+                      <Link className="w-4 h-4" />
+                      Additional Links
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {course.additionalLinks.map((link, index) => (
+                        <div key={index} className="p-2 border rounded">
+                          <Button
+                            variant="link"
+                            size="sm"
+                            className="p-0 h-auto text-sm font-medium"
+                            onClick={() => window.open(link.url, '_blank')}
+                          >
+                            {link.description}
+                            <ExternalLink className="w-3 h-3 ml-1" />
+                          </Button>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
           </div>
           
+          {/* Right column - Course Info */}
           <div className="space-y-4">
             {course.instructor && course.instructor !== "" && (
               <Card>

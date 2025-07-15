@@ -12,7 +12,22 @@ export interface Course {
     time?: string;    // Made optional
     location?: string;  // Made optional
   };
+  // New attributes for course details
+  textbook?: string;  // URL
+  otherReferenceMaterial?: string;  // URL
+  notes?: string;  // URL
+  questionPapers?: string;  // URL
+  note?: string;  // Text content
+  additionalLinks?: { description: string; url: string; }[];  // Array of links
 }
+
+/*
+Fill additional links with the following format:
+{
+  description: "Description of the link",
+  url: "URL of the link"
+}
+ */
 
 export const courses: Course[] = [
   {
@@ -22,13 +37,24 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Amitabha Bhattacharya",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "https://drive.google.com/file/d/1GwmhseRDrAXKO8UwY-wqmnXZky8gV3pP/view?usp=drive_link",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "Convolutions are very important in this course. Make sure you understand them well.",
+    additionalLinks: [
+      {
+        description: "Network Theory Assignment Solutions",
+        url: "https://drive.google.com/drive/folders/1qqwGw_-HeHi5tWbF6_IKHznHDhpfUnce?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC21205",
@@ -37,13 +63,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Aniket Singha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21207",
@@ -52,13 +84,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Tarun Kanti Bhattacharyya",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC29203",
@@ -67,13 +105,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Debashis Sen",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC29205",
@@ -82,13 +126,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Prasanta Kumar Guha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC29207",
@@ -97,13 +147,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Anindya Sundar Dhar",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "MA20205",
@@ -118,7 +174,13 @@ export const courses: Course[] = [
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21204",
@@ -127,13 +189,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Mrityunjoy Chakraborty",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21202",
@@ -142,13 +210,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Goutam Saha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21206",
@@ -157,13 +231,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Sarang Pendharker",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21208",
@@ -172,13 +252,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Subhadip Mukherjee",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC29202",
@@ -187,13 +273,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Goutam Saha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC21210",
@@ -202,13 +294,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Ritwik Kumar Layek",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39201",
@@ -217,13 +315,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Sharba Bandyopadhyay",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31203",
@@ -232,13 +336,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Goutam Das",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39005",
@@ -247,13 +357,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Rajat Roy",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31005",
@@ -262,13 +378,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Arijit De",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31205",
@@ -277,13 +399,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Debashis Sen",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31201",
@@ -292,13 +420,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Goutam Saha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39001",
@@ -307,13 +441,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Jithin R",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31204",
@@ -322,13 +462,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Amitalok Jayant Budkuley",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC30202",
@@ -337,13 +483,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "Prabir Kumar Biswas",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31004",
@@ -352,13 +504,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "Gourab Dutta",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC31202",
@@ -367,13 +525,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 4,
     season: "",
-    instructor: "Arijit De",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39202",
@@ -382,13 +546,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Saumik Bhattacharya",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39002",
@@ -397,13 +567,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Jithin R",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC39004",
@@ -412,13 +588,19 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 2,
     season: "",
-    instructor: "Gourab Dutta",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   },
   {
     id: "EC60294",
@@ -427,12 +609,18 @@ export const courses: Course[] = [
     department: "Electronics and Electrical Communication Engineering",
     credits: 3,
     season: "",
-    instructor: "Prasanta Kumar Guha",
+    instructor: "",
     description: "",
     schedule: {
       days: [],
       time: "",
       location: ""
-    }
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: []
   }
 ];
