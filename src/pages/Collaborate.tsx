@@ -59,7 +59,7 @@ export default function Collaborate() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground mb-2">
-              For any queries or suggestions:
+              For any queries, suggestions or anything else:
             </p>
             <a 
               href="mailto:eecehelp@gmail.com" 

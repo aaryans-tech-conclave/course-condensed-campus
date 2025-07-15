@@ -19,6 +19,7 @@ const Index = () => {
     return depts.sort();
   }, []);
   
+  // Filter only by search and department (NOT by semester)
   const filteredCourses = useMemo(() => {
     return courses.filter(course => {
       const matchesSearch = searchQuery === "" || 
@@ -29,12 +30,9 @@ const Index = () => {
       const matchesDepartment = selectedDepartment === "" || 
         course.department === selectedDepartment;
       
-      const matchesSemester = selectedSemester === null || 
-        course.semester === selectedSemester;
-      
-      return matchesSearch && matchesDepartment && matchesSemester;
+      return matchesSearch && matchesDepartment;
     });
-  }, [searchQuery, selectedDepartment, selectedSemester]);
+  }, [searchQuery, selectedDepartment]);
   
   const handleViewDetails = (courseId: string) => {
     navigate(`/course/${courseId}`);
@@ -42,20 +40,17 @@ const Index = () => {
   
   return (
     <div>
-      {/* Filters Section */}
-      <div className="border-b bg-card">
-        <div className="max-w-6xl mx-auto p-4">
-          {/* Semester Navigation */}
-          <div className="mb-3">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-medium text-muted-foreground">Semester:</span>
-            </div>
+      {/* Semester Tabs - Visual only, no filtering */}
+      <div className="border-b bg-muted/50">
+        <div className="max-w-6xl mx-auto px-4 py-2">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-medium text-muted-foreground mr-2">Semester:</span>
             <div className="flex flex-wrap gap-1">
               <Button
                 variant={selectedSemester === null ? "default" : "outline"}
                 size="sm"
                 onClick={() => setSelectedSemester(null)}
-                className="h-6 px-2 text-xs"
+                className="h-7 px-3 text-xs"
               >
                 All
               </Button>
@@ -65,14 +60,19 @@ const Index = () => {
                   variant={selectedSemester === sem ? "default" : "outline"}
                   size="sm"
                   onClick={() => setSelectedSemester(sem)}
-                  className="h-6 px-2 text-xs"
+                  className="h-7 px-3 text-xs"
                 >
                   {sem}
                 </Button>
               ))}
             </div>
           </div>
-          
+        </div>
+      </div>
+
+      {/* Search and Filters Section */}
+      <div className="border-b bg-card">
+        <div className="max-w-6xl mx-auto p-4">
           <div className="flex flex-col sm:flex-row gap-3">
             <div className="relative flex-1">
               <Search className="absolute left-2 top-2 w-3 h-3 text-muted-foreground" />
@@ -169,7 +169,6 @@ const Index = () => {
                   onClick={() => {
                     setSearchQuery("");
                     setSelectedDepartment("");
-                    setSelectedSemester(null);
                   }}
                 >
                   Clear Filters

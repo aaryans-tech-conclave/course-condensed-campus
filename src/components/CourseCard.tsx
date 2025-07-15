@@ -23,7 +23,7 @@ export function CourseCard({ course, onViewDetails }: CourseCardProps) {
                 {course.credits} credits
               </Badge>
               <Badge variant="outline" className="text-xs">
-                Sem {course.semester} - {course.season}
+                {course.season}
               </Badge>
             </div>
             <h3 className="text-sm font-medium leading-tight mb-1 line-clamp-2">
