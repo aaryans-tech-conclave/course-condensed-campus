@@ -48,6 +48,59 @@ const Index = () => {
     return instructors.size;
   }, [filteredCourses]);
   
+  // Define semester courses
+  const semester3CourseIds = [
+    "EC21203", "EC21205", "EC21207", "EC29203", 
+    "EC29205", "EC29207", "MA20205"
+  ];
+  
+  const semester4CourseIds = [
+    "EC21204", "EC21202", "EC21206", "EC21208",
+    "EC29202", "EC21210"
+  ];
+  
+  const semester5CourseIds = [
+    "EC39201", "EC31203", "EC39005", "EC31005",
+    "EC31205", "EC31201", "EC39001"
+  ];
+  
+  const semester6CourseIds = [
+    "EC31204", "EC30202", "EC31004", "EC31202",
+    "EC39202", "EC39002", "EC39004", "EC60294"
+  ];
+  
+  const getSemesterCourses = (courseIds: string[]) => {
+    return courses.filter(course => courseIds.includes(course.id));
+  };
+  
+  const semester3Courses = getSemesterCourses(semester3CourseIds);
+  const semester4Courses = getSemesterCourses(semester4CourseIds);
+  const semester5Courses = getSemesterCourses(semester5CourseIds);
+  const semester6Courses = getSemesterCourses(semester6CourseIds);
+  
+  const renderCourseTiles = (semesterCourses: typeof courses) => (
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      {semesterCourses.map(course => (
+        <Card 
+          key={course.id} 
+          className="cursor-pointer hover:shadow-md transition-shadow"
+          onClick={() => handleViewDetails(course.id)}
+        >
+          <CardContent className="p-4">
+            <div className="space-y-1">
+              <div className="font-mono text-sm font-medium">
+                {course.code}
+              </div>
+              <div className="text-sm text-muted-foreground">
+                {course.name}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  );
+  
   return (
     <div>
       {/* Semester Tabs */}
@@ -64,11 +117,48 @@ const Index = () => {
             
             {/* Tab Content Area */}
             <div className="mt-4 mb-2">
-              {[3, 4, 5, 6, 7, 8].map(sem => (
+              {/* Semester 3 */}
+              <TabsContent value="3" className="mt-0">
+                <Card>
+                  <CardContent className="p-4">
+                    {renderCourseTiles(semester3Courses)}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              {/* Semester 4 */}
+              <TabsContent value="4" className="mt-0">
+                <Card>
+                  <CardContent className="p-4">
+                    {renderCourseTiles(semester4Courses)}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              {/* Semester 5 */}
+              <TabsContent value="5" className="mt-0">
+                <Card>
+                  <CardContent className="p-4">
+                    {renderCourseTiles(semester5Courses)}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              {/* Semester 6 */}
+              <TabsContent value="6" className="mt-0">
+                <Card>
+                  <CardContent className="p-4">
+                    {renderCourseTiles(semester6Courses)}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              {/* Other semesters */}
+              {[7, 8].map(sem => (
                 <TabsContent key={sem} value={sem.toString()} className="mt-0">
                   <Card>
                     <CardContent className="p-4">
-                      <p className="text-sm text-center">Semester {sem}</p>
+                      <p className="text-sm text-center">Coming soon</p>
                     </CardContent>
                   </Card>
                 </TabsContent>
