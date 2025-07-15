@@ -91,12 +91,29 @@ export const courses: Course[] = [
       time: "",
       location: ""
     },
-    textbook: "",
-    otherReferenceMaterial: "",
+    textbook: "https://drive.google.com/file/d/1y5rBtMhQ1FKW0E6_VZIQrcOD56Bz_pTE/view?usp=drive_link",
+    otherReferenceMaterial: "https://drive.google.com/file/d/1GiGolco1TIk9sLpeHc50BuLzJyeDcGEI/view?usp=drive_link",
     notes: "",
     questionPapers: "",
-    note: "",
-    additionalLinks: []
+    note: "Follow Sedra Smith's book for the course. It is a good book and covers all the topics in the course, questions pop up from there. Use Razavi's book for more depth in the topics.",
+    additionalLinks: [
+      {
+        description: "Differential Amplifier Notes",
+        url: "https://drive.google.com/file/d/1y-nZBfuVA_7cxg4v_Hs8PLydzwI4_-2-/view?usp=drive_link"
+      },
+      {
+        description: "Feedback Amplifier Notes",
+        url: "https://drive.google.com/file/d/1nfYTxbZR9iEUErmrjRcuDVRbsdSe1mKE/view?usp=drive_link"
+      },
+      {
+        description: "Oscillator Notes",
+        url: "https://drive.google.com/file/d/1DSSwmRnwdG4V9nTg7H-W_BAQkvT89bEs/view?usp=drive_link"
+      },
+      {
+        description: "Practice Questions on Differential Amplifier",
+        url: "https://drive.google.com/file/d/1YVHI9MWbsKltYST95WnZThFc0HrRRi0f/view?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC29203",
