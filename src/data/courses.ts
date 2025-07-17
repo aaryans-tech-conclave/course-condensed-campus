@@ -141,19 +141,14 @@ export const courses: Course[] = [
     credits: 2,
     season: "",
     instructor: "Debashis Sen",
-    description: "",
+    description: "The following experiments were present in the Network Theory Lab:\nExperiment 1: RC Circuits as Low Pass, High Pass and Band Pass Filter\nExperiment 2: Maximum Power Transfer\nExperiment 3: Superposition Verification\nExperiment 4: Max Power Transfer through Transformer & Impedance Matching Network\nExperiment 5: Calculate & Verify Z, Y, ABCD and H Parameters of Two-Port Network",
     isLab: true,
     labReports: [
       {
-        linkText: "Lab 1 Report",
-        description: "Basic measurements and analysis",
-        url: "https://drive.google.com/file/d/123/view" // Available
+        linkText: "Complete Lab Report",
+        description: "",
+        url: "https://drive.google.com/file/d/1tXjIafz39A8cTr7-BtmqMtCwKe4l3PSu/view?usp=drive_link" // Available
       },
-      {
-        linkText: "Lab 2 Report", 
-        description: "Advanced circuit analysis",
-        url: "" // Not available yet
-      }
     ],
     schedule: {
       days: [],

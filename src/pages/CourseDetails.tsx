@@ -3,7 +3,7 @@ import { courses } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link } from "lucide-react";
+import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link, Beaker } from "lucide-react";
 
 export default function CourseDetails() {
   const { courseId } = useParams();
@@ -38,6 +38,12 @@ export default function CourseDetails() {
                 <Badge variant="outline" className="text-xs">
                   {course.credits} credits
                 </Badge>
+                {course.isLab && (
+                  <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
+                    <Beaker className="w-3 h-3 mr-1" />
+                    Laboratory
+                  </Badge>
+                )}
               </div>
               <h1 className="text-xl font-semibold mb-1">{course.name}</h1>
               <p className="text-sm text-muted-foreground">{course.department}</p>
@@ -112,33 +118,50 @@ export default function CourseDetails() {
                   <CardTitle className="text-base">Course Description</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm leading-relaxed">{course.description}</p>
+                  <p className="text-sm leading-relaxed whitespace-pre-line">{course.description}</p>
                 </CardContent>
               </Card>
             )}
             
-            {/* Prerequisites */}
-            {course.prerequisites && course.prerequisites.length > 0 && (
+            {/* Lab Reports Section - Only for Lab Courses */}
+            {course.isLab && course.labReports && course.labReports.length > 0 && (
               <Card>
                 <CardHeader className="pb-3">
                   <CardTitle className="text-base flex items-center gap-2">
-                    <BookOpen className="w-4 h-4" />
-                    Prerequisites
+                    <Beaker className="w-4 h-4" />
+                    Lab Reports
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-1">
-                    {course.prerequisites.map((prereq, index) => (
-                      <Badge key={index} variant="outline" className="text-xs">
-                        {prereq}
-                      </Badge>
+                  <div className="space-y-3">
+                    {course.labReports.map((report, index) => (
+                      <div key={index} className="p-3 border rounded-lg bg-blue-50/50 border-blue-200">
+                        <div className="space-y-1">
+                          {report.url ? (
+                            <Button
+                              variant="link"
+                              size="sm"
+                              className="p-0 h-auto text-sm font-medium text-blue-700 hover:text-blue-900"
+                              onClick={() => window.open(report.url, '_blank')}
+                            >
+                              {report.linkText}
+                              <ExternalLink className="w-3 h-3 ml-1" />
+                            </Button>
+                          ) : (
+                            <p className="text-sm font-medium text-blue-700">{report.linkText}</p>
+                          )}
+                          {report.description && (
+                            <p className="text-xs text-muted-foreground whitespace-pre-line">{report.description}</p>
+                          )}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
             )}
             
-            {/* Note and Additional Links Cards - Full Width */}
+            {/* Note and Additional Links Cards */}
             <div className="grid gap-4 md:grid-cols-2">
               {course.note && course.note !== "" && (
                 <Card>
@@ -149,7 +172,7 @@ export default function CourseDetails() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed">{course.note}</p>
+                    <p className="text-sm leading-relaxed whitespace-pre-line">{course.note}</p>
                   </CardContent>
                 </Card>
               )}
@@ -186,79 +209,52 @@ export default function CourseDetails() {
           
           {/* Right column - Course Info */}
           <div className="space-y-4">
-            {course.instructor && course.instructor !== "" && (
-              <Card>
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <Users className="w-4 h-4" />
-                    Instructor
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm font-medium">{course.instructor}</p>
-                </CardContent>
-              </Card>
-            )}
+            {/* Instructor Info */}
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base flex items-center gap-2">
+                  <Users className="w-4 h-4" />
+                  Instructor
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm font-medium">
+                  {course.instructor || "TBA"}
+                </p>
+              </CardContent>
+            </Card>
             
-            {((course.schedule?.days && course.schedule.days.length > 0) || 
-              (course.schedule?.time && course.schedule.time !== "")) && (
+            {/* Schedule Info */}
+            {(course.schedule.days?.length || course.schedule.time || course.schedule.location) && (
               <Card>
                 <CardHeader className="pb-3">
                   <CardTitle className="text-base flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
+                    <Calendar className="w-4 h-4" />
                     Schedule
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  {course.schedule?.days && course.schedule.days.length > 0 && (
-                    <div className="text-sm">
-                      <span className="font-medium">Days:</span> {course.schedule.days.join(", ")}
+                  {course.schedule.days && course.schedule.days.length > 0 && (
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-3 h-3 text-muted-foreground" />
+                      <span className="text-sm">{course.schedule.days.join(", ")}</span>
                     </div>
                   )}
-                  {course.schedule?.time && course.schedule.time !== "" && (
-                    <div className="text-sm">
-                      <span className="font-medium">Time:</span> {course.schedule.time}
+                  {course.schedule.time && (
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-3 h-3 text-muted-foreground" />
+                      <span className="text-sm">{course.schedule.time}</span>
+                    </div>
+                  )}
+                  {course.schedule.location && (
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-3 h-3 text-muted-foreground" />
+                      <span className="text-sm">{course.schedule.location}</span>
                     </div>
                   )}
                 </CardContent>
               </Card>
             )}
-            
-            {course.schedule?.location && course.schedule.location !== "" && (
-              <Card>
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Location
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">{course.schedule.location}</p>
-                </CardContent>
-              </Card>
-            )}
-            
-            <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-base flex items-center gap-2">
-                  <Award className="w-4 h-4" />
-                  Course Info
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="text-sm">
-                  <span className="font-medium">Credits:</span> {course.credits}
-                </div>
-                {course.season && course.season !== "" && (
-                  <div className="text-sm">
-                    <span className="font-medium">Season:</span> {course.season}
-                  </div>
-                )}
-                <div className="text-sm">
-                  <span className="font-medium">Department:</span> {course.department}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
