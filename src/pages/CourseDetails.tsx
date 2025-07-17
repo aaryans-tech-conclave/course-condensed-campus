@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link, Beaker } from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 
 export default function CourseDetails() {
   const { courseId } = useParams();
@@ -118,7 +119,9 @@ export default function CourseDetails() {
                   <CardTitle className="text-base">Course Description</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm leading-relaxed whitespace-pre-line">{course.description}</p>
+                  <div className="text-sm leading-relaxed prose prose-sm max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-em:text-foreground prose-code:text-foreground prose-ul:text-foreground prose-ol:text-foreground prose-p:my-1">
+                    <ReactMarkdown>{course.description}</ReactMarkdown>
+                  </div>
                 </CardContent>
               </Card>
             )}
@@ -211,7 +214,9 @@ export default function CourseDetails() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed whitespace-pre-line">{course.note}</p>
+                    <div className="text-sm leading-relaxed prose prose-sm max-w-none prose-headings:text-foreground prose-p:text-foreground prose-strong:text-foreground prose-em:text-foreground prose-code:text-foreground prose-ul:text-foreground prose-ol:text-foreground prose-p:my-1">
+                      <ReactMarkdown>{course.note}</ReactMarkdown>
+                    </div>
                   </CardContent>
                 </Card>
               )}

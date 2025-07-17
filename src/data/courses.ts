@@ -156,7 +156,14 @@ export const courses: Course[] = [
     credits: 2,
     season: "",
     instructor: "Debashis Sen",
-    description: "The following experiments were present in the Network Theory Lab:\nExperiment 1: RC Circuits as Low Pass, High Pass and Band Pass Filter\nExperiment 2: Maximum Power Transfer\nExperiment 3: Superposition Verification\nExperiment 4: Max Power Transfer through Transformer & Impedance Matching Network\nExperiment 5: Calculate & Verify Z, Y, ABCD and H Parameters of Two-Port Network",
+    description: `The following experiments were present in the Network Theory Lab:
+
+- **Experiment 1:** RC Circuits as Low Pass, High Pass and Band Pass Filter\n
+- **Experiment 2:** Maximum Power Transfer\n
+- **Experiment 3:** Superposition Verification\n
+- **Experiment 4:** Max Power Transfer through Transformer & Impedance Matching Network\n
+- **Experiment 5:** Calculate & Verify Z, Y, ABCD and H Parameters of Two-Port Network\n
+`,
     isLab: true,
     labReports: [
       {
