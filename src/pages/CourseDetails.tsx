@@ -123,42 +123,81 @@ export default function CourseDetails() {
               </Card>
             )}
             
-            {/* Lab Reports Section - Only for Lab Courses */}
-            {course.isLab && course.labReports && course.labReports.length > 0 && (
-              <Card>
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <Beaker className="w-4 h-4" />
-                    Lab Reports
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {course.labReports.map((report, index) => (
-                      <div key={index} className="p-3 border rounded-lg bg-blue-50/50 border-blue-200">
-                        <div className="space-y-1">
-                          {report.url ? (
-                            <Button
-                              variant="link"
-                              size="sm"
-                              className="p-0 h-auto text-sm font-medium text-blue-700 hover:text-blue-900"
-                              onClick={() => window.open(report.url, '_blank')}
-                            >
-                              {report.linkText}
-                              <ExternalLink className="w-3 h-3 ml-1" />
-                            </Button>
-                          ) : (
-                            <p className="text-sm font-medium text-blue-700">{report.linkText}</p>
-                          )}
-                          {report.description && (
-                            <p className="text-xs text-muted-foreground whitespace-pre-line">{report.description}</p>
-                          )}
-                        </div>
+            {/* Lab Reports and Lab Manuals Section - Only for Lab Courses */}
+            {course.isLab && ((course.labReports && course.labReports.length > 0) || (course.labManuals && course.labManuals.length > 0)) && (
+              <div className="grid gap-4 md:grid-cols-2">
+                {/* Lab Reports */}
+                {course.labReports && course.labReports.length > 0 && (
+                  <Card>
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-center gap-2">
+                        <Beaker className="w-4 h-4" />
+                        Lab Reports
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        {course.labReports.map((report, index) => (
+                          <div key={index} className="p-2 border rounded">
+                            {report.url ? (
+                              <Button
+                                variant="link"
+                                size="sm"
+                                className="p-0 h-auto text-sm font-medium"
+                                onClick={() => window.open(report.url, '_blank')}
+                              >
+                                {report.linkText}
+                                <ExternalLink className="w-3 h-3 ml-1" />
+                              </Button>
+                            ) : (
+                              <p className="text-sm font-medium">{report.linkText}</p>
+                            )}
+                            {report.description && (
+                              <p className="text-xs text-muted-foreground whitespace-pre-line mt-1">{report.description}</p>
+                            )}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+                    </CardContent>
+                  </Card>
+                )}
+                
+                {/* Lab Manuals */}
+                {course.labManuals && course.labManuals.length > 0 && (
+                  <Card>
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-center gap-2">
+                        <BookOpen className="w-4 h-4" />
+                        Lab Manuals
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        {course.labManuals.map((manual, index) => (
+                          <div key={index} className="p-2 border rounded">
+                            {manual.url ? (
+                              <Button
+                                variant="link"
+                                size="sm"
+                                className="p-0 h-auto text-sm font-medium"
+                                onClick={() => window.open(manual.url, '_blank')}
+                              >
+                                {manual.linkText}
+                                <ExternalLink className="w-3 h-3 ml-1" />
+                              </Button>
+                            ) : (
+                              <p className="text-sm font-medium">{manual.linkText}</p>
+                            )}
+                            {manual.description && (
+                              <p className="text-xs text-muted-foreground whitespace-pre-line mt-1">{manual.description}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
             )}
             
             {/* Note and Additional Links Cards */}

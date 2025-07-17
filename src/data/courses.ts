@@ -21,6 +21,7 @@ export interface Course {
   note?: string;  // Text content
   additionalLinks?: { description: string; url: string; }[];  // Array of links
   labReports?: { linkText: string; description: string; url: string; }[];  // Lab reports for lab courses
+  labManuals?: { linkText: string; description: string; url: string; }[];  // Lab manuals for lab courses
 }
 
 /*
@@ -28,6 +29,20 @@ Fill additional links with the following format:
 {
   description: "Description of the link",
   url: "URL of the link"
+}
+
+Fill lab reports with the following format:
+{
+  linkText: "Text to be displayed as the link",
+  description: "Description of what the link contains",
+  url: "URL of the lab report"
+}
+
+Fill lab manuals with the following format:
+{
+  linkText: "Text to be displayed as the link",
+  description: "Description of what the manual contains",
+  url: "URL of the lab manual"
 }
  */
 
@@ -150,6 +165,7 @@ export const courses: Course[] = [
         url: "https://drive.google.com/file/d/1tXjIafz39A8cTr7-BtmqMtCwKe4l3PSu/view?usp=drive_link" // Available
       },
     ],
+    labManuals: [],
     schedule: {
       days: [],
       time: "",
