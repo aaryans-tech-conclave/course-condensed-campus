@@ -7,6 +7,7 @@ export interface Course {
   season?: "Spring" | "Autumn" | "";  // Made optional and allow empty string
   instructor?: string;  // Made optional
   description?: string;  // Made optional
+  isLab?: boolean;  // New field to identify lab courses
   schedule: {
     days?: string[];  // Made optional
     time?: string;    // Made optional
@@ -19,6 +20,7 @@ export interface Course {
   questionPapers?: string;  // URL
   note?: string;  // Text content
   additionalLinks?: { description: string; url: string; }[];  // Array of links
+  labReports?: { linkText: string; description: string; url: string; }[];  // Lab reports for lab courses
 }
 
 /*
@@ -47,7 +49,7 @@ export const courses: Course[] = [
     textbook: "https://drive.google.com/file/d/1GwmhseRDrAXKO8UwY-wqmnXZky8gV3pP/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21203&exam=midsem%2Cendsem%2Cct",
     note: "Convolutions are very important in this course. Make sure you understand them well.",
     additionalLinks: [
       {
@@ -70,11 +72,11 @@ export const courses: Course[] = [
       time: "",
       location: ""
     },
-    textbook: "",
-    otherReferenceMaterial: "",
+    textbook: "https://drive.google.com/file/d/14J9PU_KrYrGFOxn2MHsdm-hA1xtcOy4n/view?usp=drive_link",
+    otherReferenceMaterial: "https://drive.google.com/file/d/1e7lYZRtC4VfH1eGHTtxnzfinT2BxPjpz/view?usp=drive_link",
     notes: "",
-    questionPapers: "",
-    note: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21205&exam=midsem%2Cendsem%2Cct",
+    note: "Course is theoretical, so make sure you understand the concepts well. Energy band diagrams are important and routinely asked in the exams.",
     additionalLinks: []
   },
   {
@@ -112,6 +114,22 @@ export const courses: Course[] = [
       {
         description: "Practice Questions on Differential Amplifier",
         url: "https://drive.google.com/file/d/1YVHI9MWbsKltYST95WnZThFc0HrRRi0f/view?usp=drive_link"
+      },
+      {
+        description: "Practice Questions on Current Mirror",
+        url: "https://drive.google.com/file/d/1fE6r0MvPUD7_1lxMZbrTYdbhUPIidDJM/view?usp=drive_link"
+      },
+      {
+        description: "Practice Questions on Operational Amplifier",
+        url: "https://drive.google.com/file/d/1ePGo7wH9tNxLD9VIXz5TP2-mDzrBJy0E/view?usp=drive_link"
+      },
+      {
+        description: "OpAmp Problems Solutions",
+        url: "https://drive.google.com/file/d/1Zg4Q6Mtr8PgbyAM1r1FFWaKxJ-dCsPAD/view?usp=drive_link"
+      },
+      {
+        description: "Problems on differential amplifier",
+        url: "https://drive.google.com/file/d/1YVHI9MWbsKltYST95WnZThFc0HrRRi0f/view?usp=drive_link"
       }
     ]
   },
@@ -124,6 +142,19 @@ export const courses: Course[] = [
     season: "",
     instructor: "Debashis Sen",
     description: "",
+    isLab: true,
+    labReports: [
+      {
+        linkText: "Lab 1 Report",
+        description: "Basic measurements and analysis",
+        url: "https://drive.google.com/file/d/123/view" // Available
+      },
+      {
+        linkText: "Lab 2 Report", 
+        description: "Advanced circuit analysis",
+        url: "" // Not available yet
+      }
+    ],
     schedule: {
       days: [],
       time: "",
