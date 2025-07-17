@@ -58,12 +58,6 @@ export function CourseCard({ course, onViewDetails }: CourseCardProps) {
           </div>
         )}
         
-        {course.description && course.description !== "" && (
-          <p className="text-xs text-muted-foreground line-clamp-2 mt-2">
-            {course.description}
-          </p>
-        )}
-        
         {course.prerequisites && course.prerequisites.length > 0 && (
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <BookOpen className="w-3 h-3" />
