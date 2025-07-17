@@ -509,6 +509,32 @@ export const courses: Course[] = [
     season: "",
     instructor: "Jithin R",
     description: "",
+    isLab: true,
+    labReports: [
+      {
+        linkText: "Experiment 1",
+        description: "Basic Filter Design",
+        url: "https://drive.google.com/file/d/12vpZbvBIK8tjdJMFCk-jwMACEPcdJIua/view?usp=drive_link" // Available
+      },
+      {
+        linkText: "Experiment 2",
+        description: "Switching Modulator and Envelope Detector",
+        url: "https://drive.google.com/file/d/1doWKpqIyeFo8iZ37Krvq01ZM9upxIQy6/view?usp=drive_link" // Available
+      },
+      
+    ],
+    labManuals: [
+      {
+        linkText: "Experiment 1",
+        description: "Basic Filter Design",
+        url: "https://drive.google.com/file/d/1TVajGultzmxyhC0IDrqkKI3KtcCOGDny/view?usp=drive_link" // Available
+      },
+      {
+        linkText: "Experiment 2",
+        description: "Switching Modulator and Envelope Detector",
+        url: "https://drive.google.com/file/d/192pMPM1RmOZFgySBSG8H-vaErqGr2CmY/view?usp=drive_link" // Available
+      },
+    ],
     schedule: {
       days: [],
       time: "",
