@@ -39,7 +39,7 @@ export default function CourseDetails() {
                   {course.credits} credits
                 </Badge>
                 {course.isLab && (
-                  <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
+                  <Badge variant="secondary" className="text-sm font-mono text-primary">
                     <Beaker className="w-3 h-3 mr-1" />
                     Laboratory
                   </Badge>
