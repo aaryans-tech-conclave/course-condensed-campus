@@ -249,6 +249,44 @@ export const courses: Course[] = [
     season: "",
     instructor: "Anindya Sundar Dhar",
     description: "",
+    isLab: true,
+    labReports: [
+      {
+        linkText: "Analog Lab Experiment 1",
+        description: "Frequency Response CE Amplifier",
+        url: "https://drive.google.com/file/d/1_vxIdFy07m3VhuErmyx2bheMStEzsVay/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 2",
+        description: "Cascaded Amplifier Design",
+        url: "https://drive.google.com/file/d/1uQkoxCQloObRfp8m1m8dJHorSBifVWdU/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 3",
+        description: "Common Base Amplifier",
+        url: "https://drive.google.com/file/d/1HMZEaFoBFqDw9ECsDX0Gg3ODRxeugIJn/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 4",
+        description: "Current Mirrors",
+        url: "https://drive.google.com/file/d/1ZHCMlCvPrYJ2Om01gcCYgpOifIag8Zcx/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 5",
+        description: "Differential Amplifier",
+        url: "https://drive.google.com/file/d/18zeLDCxJu-X_H-ubI5a7aBtqfTAEM0TO/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 6",
+        description: "RC Oscillator",
+        url: "https://drive.google.com/file/d/1IACnudOMvBxtkH8XncVK0ahwURHGPPwF/view?usp=drive_link"
+      },
+      {
+        linkText: "Analog Lab Experiment 7",
+        description: "Audio Amplifier",
+        url: "https://drive.google.com/file/d/1c2o0oFtQfCuq0VMkuXYU9PAJsjaDCXGG/view?usp=drive_link"
+      }
+    ],    
     schedule: {
       days: [],
       time: "",
