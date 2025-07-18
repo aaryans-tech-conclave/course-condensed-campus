@@ -193,7 +193,41 @@ export const courses: Course[] = [
     credits: 2,
     season: "",
     instructor: "Prasanta Kumar Guha",
-    description: "",
+    description: `There are three sub-labs within this course:
+
+- **1:** Characterization Lab
+- **2:** Fabrication Lab
+- **3:** Silvaco Lab`,
+    isLab: true,
+    labReports: [
+      {
+        linkText: "Characterization Lab Report Complete",
+        description: "",
+        url: "https://drive.google.com/file/d/16HHL5xBLIDBX4z2ZWTbeL6mKTy0QFoup/view?usp=drive_link" // Available
+      },
+      {
+        linkText: "Fabrication Lab Report Complete",
+        description: "",
+        url: "https://drive.google.com/file/d/1fBTLOX8zZvktFf53weRyrasiX0QblTB2/view?usp=drive_link" // Available
+      },
+    ],
+    labManuals: [
+      {
+        linkText: "Silvaco Lab Experiment 1",
+        description: "PN Junction Diode",
+        url: "https://drive.google.com/drive/folders/1Lj6Vk-8J8XM8KfXYMgO49nxuRTuYoaIG?usp=drive_link" // Available
+      },
+      {
+        linkText: "Silvaco Lab Experiment 2",
+        description: "NPN BJT",
+        url: "https://drive.google.com/drive/folders/1m3ik85zjOxjhrP1VkdDn4rUmGBDB9nJo?usp=drive_link" // Available
+      },
+      {
+        linkText: "Silvaco Lab Experiment 3",
+        description: "MOSFET",
+        url: "https://drive.google.com/drive/folders/1r-xRcmYleAmsVkwLs52TX8LV6PFOu9Xn?usp=drive_link" // Available
+      },
+    ],
     schedule: {
       days: [],
       time: "",
