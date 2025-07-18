@@ -111,7 +111,7 @@ export const courses: Course[] = [
     textbook: "https://drive.google.com/file/d/1y5rBtMhQ1FKW0E6_VZIQrcOD56Bz_pTE/view?usp=drive_link",
     otherReferenceMaterial: "https://drive.google.com/file/d/1GiGolco1TIk9sLpeHc50BuLzJyeDcGEI/view?usp=drive_link",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21207&exam=midsem%2Cendsem%2Cct",
     note: "Follow Sedra Smith's book for the course. It is a good book and covers all the topics in the course, questions pop up from there. Use Razavi's book for more depth in the topics.",
     additionalLinks: [
       {
