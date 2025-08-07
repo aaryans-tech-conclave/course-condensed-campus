@@ -332,7 +332,7 @@ export const courses: Course[] = [
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=MA20205&exam=midsem%2Cendsem%2Cct",
     note: "",
     additionalLinks: [],
     assignments: [
@@ -483,12 +483,48 @@ export const courses: Course[] = [
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/drive/u/3/folders/1ss3HH3q87AcI3fSE3zn5lm5DTvcJ7fxk",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21202&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description: "DEC PPT",
+        url: "https://drive.google.com/file/d/1KBJujeo7iffjSOdk81dWAokbOk32Y4rJ/view?usp=drive_link"
+      },
+      {
+        description: "Midsem Questions",
+        url: "https://drive.google.com/drive/folders/1n-ao53WMpJ7KJmUoeOwzRGEtaLkBmXHY?usp=drive_link"
+      },
+    ],
+    assignments: [
+      {
+        linkText: "Assignment 1",
+        description: "",
+        url: "https://drive.google.com/drive/folders/1eQzfChZH916dyktL5VCZk4q8S6TRQBny?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 2",
+        description: "",
+        url: "https://drive.google.com/drive/folders/18czMLG8-AxPLumIqe_vhgWMCJENBtmTx?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 3",
+        description: "",
+        url: "https://drive.google.com/drive/folders/1DThf1PHvFiYlo2Qg_pie5Ll5zKcJo0OS?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 5",
+        description: "",
+        url: "https://drive.google.com/drive/folders/1c2mg4cscfngMVkrfqLB87fFycssJ9sX7?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 6",
+        description: "",
+        url: "https://drive.google.com/drive/folders/1sEJbD3XXm4XoBvxBhX4kMqMEXnFpYKR6?usp=drive_link"
+      },
+    ],
   },
   {
     id: "EC21206",
