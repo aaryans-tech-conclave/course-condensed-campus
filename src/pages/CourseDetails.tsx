@@ -3,7 +3,7 @@ import { courses } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link, Beaker } from "lucide-react";
+import { Users, Clock, MapPin, BookOpen, Calendar, Award, ExternalLink, FileText, Link, Beaker, PenTool, CheckCircle } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 
 export default function CourseDetails() {
@@ -124,6 +124,83 @@ export default function CourseDetails() {
                   </div>
                 </CardContent>
               </Card>
+            )}
+            
+            {/* Assignments and Assignment Solutions Section */}
+            {((course.assignments && course.assignments.length > 0) || (course.assignmentSolutions && course.assignmentSolutions.length > 0)) && (
+              <div className="grid gap-4 md:grid-cols-2">
+                {/* Assignments */}
+                {course.assignments && course.assignments.length > 0 && (
+                  <Card>
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-center gap-2">
+                        <PenTool className="w-4 h-4" />
+                        Assignments
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        {course.assignments.map((assignment, index) => (
+                          <div key={index} className="p-2 border rounded">
+                            {assignment.url ? (
+                              <Button
+                                variant="link"
+                                size="sm"
+                                className="p-0 h-auto text-sm font-medium"
+                                onClick={() => window.open(assignment.url, '_blank')}
+                              >
+                                {assignment.linkText}
+                                <ExternalLink className="w-3 h-3 ml-1" />
+                              </Button>
+                            ) : (
+                              <p className="text-sm font-medium">{assignment.linkText}</p>
+                            )}
+                            {assignment.description && (
+                              <p className="text-xs text-muted-foreground whitespace-pre-line mt-1">{assignment.description}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+                
+                {/* Assignment Solutions */}
+                {course.assignmentSolutions && course.assignmentSolutions.length > 0 && (
+                  <Card>
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-base flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4" />
+                        Assignment Solutions
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        {course.assignmentSolutions.map((solution, index) => (
+                          <div key={index} className="p-2 border rounded">
+                            {solution.url ? (
+                              <Button
+                                variant="link"
+                                size="sm"
+                                className="p-0 h-auto text-sm font-medium"
+                                onClick={() => window.open(solution.url, '_blank')}
+                              >
+                                {solution.linkText}
+                                <ExternalLink className="w-3 h-3 ml-1" />
+                              </Button>
+                            ) : (
+                              <p className="text-sm font-medium">{solution.linkText}</p>
+                            )}
+                            {solution.description && (
+                              <p className="text-xs text-muted-foreground whitespace-pre-line mt-1">{solution.description}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
             )}
             
             {/* Lab Reports and Lab Manuals Section - Only for Lab Courses */}

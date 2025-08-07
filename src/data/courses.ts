@@ -22,6 +22,8 @@ export interface Course {
   additionalLinks?: { description: string; url: string; }[];  // Array of links
   labReports?: { linkText: string; description: string; url: string; }[];  // Lab reports for lab courses
   labManuals?: { linkText: string; description: string; url: string; }[];  // Lab manuals for lab courses
+  assignments?: { linkText: string; description: string; url: string; }[];  // Assignments for courses
+  assignmentSolutions?: { linkText: string; description: string; url: string; }[];  // Assignment solutions for courses
 }
 
 /*
@@ -43,6 +45,20 @@ Fill lab manuals with the following format:
   linkText: "Text to be displayed as the link",
   description: "Description of what the manual contains",
   url: "URL of the lab manual"
+}
+
+Fill assignments with the following format:
+{
+  linkText: "Text to be displayed as the link",
+  description: "Description of what the assignment contains",
+  url: "URL of the assignment"
+}
+
+Fill assignment solutions with the following format:
+{
+  linkText: "Text to be displayed as the link", 
+  description: "Description of what the solution contains",
+  url: "URL of the assignment solution"
 }
  */
 
@@ -318,7 +334,91 @@ export const courses: Course[] = [
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [],
+    assignments: [
+      {
+        linkText: "Assignment 1",
+        description: "",
+        url: "https://drive.google.com/file/d/1Tru77xRyykrFIkhrvc1-NNuYbuiMLi6P/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 2",
+        description: "",
+        url: "https://drive.google.com/file/d/1Tru77xRyykrFIkhrvc1-NNuYbuiMLi6P/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 3",
+        description: "",
+        url: "https://drive.google.com/file/d/1sLv6x_ahY0OKYb242F8V6ydEiBVy2HeM/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 4",
+        description: "",
+        url: "https://drive.google.com/file/d/1EDOq7UBRo9-TX_tofO4l2lnYp_giyU64/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 5",
+        description: "",
+        url: "https://drive.google.com/file/d/13rpQcrkYRdGDyLUvaCaXIFW4NMbhKffX/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 6",
+        description: "",
+        url: "https://drive.google.com/file/d/1XfJVuQg4NAeLRlbiqStuuxbB9s0fZOK1/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 7",
+        description: "",
+        url: "https://drive.google.com/file/d/1_62v8WmCYB9QuhAojmfdr1sGNxzNyUC4/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 8",
+        description: "",
+        url: "https://drive.google.com/file/d/19YyVCC60uMxR_aO8hthhHHQP_Cz-GfMV/view?usp=drive_link"
+      }
+    ],
+    assignmentSolutions: [
+      {
+        linkText: "Assignment 1 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1nUP3szHo0AnxjTJczYXd3cJ1pkHbsBiH/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 2 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1117TlXWe_HBviUZ7KPYXgrArTGJe6_dY/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 3 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1-C-Eg2FHs4ZMYxImy71tWXcWllu0x5A7/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 4 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1NwP4df8aI3udjcKzlYT480RWvUhLVHOg/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 5 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1JHENHSpy8b9gVS420jE76LTDrvMSel6-/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 6 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1hhPMdYD_w_JHG8hAAP4qJOLX0lxbXgwa/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 7 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/1KdSy96u1Nq_VjoL9thqsXFfDjU16S96y/view?usp=drive_link"
+      },
+      {
+        linkText: "Assignment 8 Solution",
+        description: "",
+        url: "https://drive.google.com/file/d/14-yeEGl1e9MxTA6XsEVgpuKZeMafxsj8/view?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC21204",
