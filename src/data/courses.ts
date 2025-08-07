@@ -428,18 +428,46 @@ export const courses: Course[] = [
     credits: 4,
     season: "",
     instructor: "Mrityunjoy Chakraborty",
-    description: "",
+    description: `The Subject is split into two components, Linear Algebra and Optimization Models, former dealt with before the Midsems, the latter post. Your notes are very important for Optimization Models (if you can't understand the Textbook). Important Textbooks:
+
+- **1:** Optimization Models Giuseppe Calafiore and Laurent El Ghaoui (OM Component)
+- **2:** Linear Algebra Kenneth Hoffman and Ray Kunze (LA Component)`,
     schedule: {
       days: [],
       time: "",
       location: ""
     },
     textbook: "",
-    otherReferenceMaterial: "",
+    otherReferenceMaterial: "https://drive.google.com/file/d/1m88iKc1_69UJ5-GqkthQ2xuvIuEz8xa1/view?usp=drive_link",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21204&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description: "Optimization Models Textbook",
+        url: "https://drive.google.com/file/d/1MMA8ohIshlKGhheCEEzpKP9ow0DoIhKU/view?usp=sharing"
+      },
+      {
+        description: "Linear Algebra Textbook",
+        url: "https://drive.google.com/file/d/1c1Eq09scSuNC0cMqttRki1gZ7Hzk-TK_/view?usp=sharing"
+      },
+      {
+        description: "OM Notes 1",
+        url: "https://drive.google.com/file/d/1PVt67VYGMSuquKZrqOl71fawUyl80FdR/view?usp=sharing"
+      },
+      {
+        description: "OM Notes 2",
+        url: "https://drive.google.com/file/d/1YCpEC1DNDuj4DYaK7eyWN3XiaqeXIq7f/view?usp=sharing"
+      },
+      {
+        description: "OM Notes 3",
+        url: "https://drive.google.com/file/d/1v25rKcf4mZ-ZaDeHGWCZw2HevxK8NtMa/view?usp=sharing"
+      },
+      {
+        description: "LAOM Sample Exam",
+        url: "https://drive.google.com/file/d/1lk6fSMlS1WbJKjTXkqfFWLAnT5NSmAcO/view?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC21202",
