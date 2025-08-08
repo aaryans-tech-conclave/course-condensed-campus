@@ -534,7 +534,11 @@ export const courses: Course[] = [
     credits: 4,
     season: "",
     instructor: "Sarang Pendharker",
-    description: "",
+    description: `Primary text books:
+- **1:** Sadiku & Kulkarni, Principles of Electromagnetics. Oxford University Press, Asian Edition.
+- **2:** R. K. Shevgaonkar, Electromagnetic Waves. Tata McGraw Hill.
+
+Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise makes your A to an EX`,
     schedule: {
       days: [],
       time: "",
@@ -545,8 +549,58 @@ export const courses: Course[] = [
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"NPTEL Lecture (R. K. Shevgaonkar)",
+        url:"https://nptel.ac.in/courses/117101056",
+      },
+    ],
+    assignments: [
+      {
+        linkText: "Quiz 1",
+        description: "",
+        url: "https://drive.google.com/file/d/17E_LJLDiFJJpMs2ILoUsUtVPBZ_VQImt/view?usp=drive_link"
+      },
+      {
+        linkText: "Quiz 2",
+        description: "",
+        url: "https://drive.google.com/file/d/1Omob3baF8ApNDToUYqYYGOXj1d9H4WVP/view?usp=drive_link"
+      },
+      {
+        linkText: "Quiz 3",
+        description: "",
+        url: "https://drive.google.com/file/d/1skSCN8849DLCTTubQT48jXaykZdpfk9S/view?usp=drive_link"
+      },
+      {
+        linkText: "Quiz 4",
+        description: "",
+        url: "https://drive.google.com/file/d/1FjnZxKB1wQwjqAyS7oavuYTB6xiiV50Q/view?usp=drive_link"
+      },
+      {
+        linkText: "Tutorial 1",
+        description: "",
+        url: "https://drive.google.com/file/d/1kiWQAB1F2SnV6dhYZUNFFat4I_sIAhXD/view?usp=drive_link"
+      },
+      {
+        linkText: "Tutorial 2",
+        description: "",
+        url: "https://drive.google.com/file/d/1WR_-kuYiM7TFKG3S12feAb1fy0QK6bmN/view?usp=drive_link"
+      },
+    ],
+    assignmentSolutions: [
+      {
+        linkText: "Optional Assignment 1",
+        description: "",
+        url: "https://drive.google.com/file/d/16zxAemFeNQlzi0cTwZcJ6N1iHVkMZRhM/view?usp=drive_link"
+      },
+      {
+        linkText: "Optional Assignment 2",
+        description: "",
+        url: "https://drive.google.com/file/d/1xntS0m6JllAKnr0oTRQfReKi1xnKHOKI/view?usp=drive_link"
+      },
+    ]
   },
+
   {
     id: "EC21208",
     code: "EC21208",
