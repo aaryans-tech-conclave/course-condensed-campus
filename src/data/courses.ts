@@ -631,6 +631,46 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     season: "",
     instructor: "Goutam Saha",
     description: "",
+    isLab: true,
+    labReports: [
+      {
+        linkText: "DEC Lab Experiment 1",
+        description: "7 Seg-Display, Decoder-Deriver & Counter",
+        url: "https://drive.google.com/file/d/1a_pjALyeWo2dpQPa3Nsm1-W0Xsqwiug8/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 2",
+        description: "3-to-8 Decoder, Rolling Display",
+        url: "https://drive.google.com/file/d/1DZ44oBkaE2zQvy2PtvZAo6DPmZJmzhtx/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 3",
+        description: "Multiplexer ICs for Switch Displays",
+        url: "https://drive.google.com/file/d/14ZhVFAFSOMg-MHgsEH96cKMidrN9Fsx5/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 4",
+        description: "4 Bit Full Added",
+        url: "https://drive.google.com/file/d/1N25o1louHlEl3eGJT7IMEPfM9sp_udcY/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 5",
+        description: "Hex Key Pad & Basic Operations with Adders & ALU",
+        url: "https://drive.google.com/file/d/1O8_HDSDUJjnJZe6w4szJ92bjumZQ5Qt6/view?usp=drive_link"
+      },
+    ],
+    labManuals:[
+      {
+        linkText:"DEC EXP 1 Lab Manual",
+        description:"",
+        url:"https://drive.google.com/file/d/1alkuGwcIVHRUrWl6XB9WvZdTxdwm1yge/view?usp=drive_link"
+      },
+      {
+        linkText:"DEC EXP 2 & 3 Lab Manual",
+        description:"",
+        url:"https://drive.google.com/file/d/1qh1o_8B4OkUfT4vy6Hm1U0P5QMnHxcJ2/view?usp=drive_link"
+      },
+    ],
     schedule: {
       days: [],
       time: "",
