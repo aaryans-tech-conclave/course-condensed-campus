@@ -547,7 +547,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21206&exam=midsem%2Cendsem%2Cct",
     note: "",
     additionalLinks: [
       {
@@ -618,7 +618,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21208&exam=midsem%2Cendsem%2Cct",
     note: "",
     additionalLinks: []
   },
@@ -691,18 +691,41 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 4,
     season: "",
     instructor: "Ritwik Kumar Layek",
-    description: "",
+    description: `Pro Tip: Look at the complete syllabus notes attached, if you find yourself not understanding the subject 10 hours before the EndSem, memorizing the proofs in the Notes verbatim (and by verbatim I mean Verbatim, the order of the Letters as a sequence if you may), will do just the trick (will get you an A: A good grade if you remember what the order of matrices in a proof you dont understand).
+    Read the Textbook and the additional reference, they are excellent to teach the subject, maybe just not the day before the exam.`,
     schedule: {
       days: [],
       time: "",
       location: ""
     },
-    textbook: "",
-    otherReferenceMaterial: "",
+    textbook: "https://drive.google.com/file/d/1YedKmsTxEmd3LJNiWmVcDXYPNOdxWPjS/view?usp=drive_link",
+    otherReferenceMaterial: "https://drive.google.com/file/d/10RN6iGaFdI1Vmv4lFVUNEUeZuq4gcsUk/view?usp=drive_link",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC21210&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    assignments: [
+      {
+        linkText: "Quiz 1",
+        description: "",
+        url: "https://drive.google.com/file/d/15eDgA33MVCa7vbIR-js3u6kpmfO8Rgxl/view?usp=drive_link"
+      },
+      {
+        linkText: "Quiz 2",
+        description: "",
+        url: "https://drive.google.com/file/d/1HR0I5fMMb1NGyx7tBdS2AMu5eZmJQG1E/view?usp=drive_link"
+      },
+      {
+        linkText: "Quiz 3",
+        description: "",
+        url: "https://drive.google.com/file/d/1kOYYXuCEDMTtdssjTAiubYZszTWGZ4ea/view?usp=drive_link"
+      }
+    ],
+    additionalLinks: [
+      {
+        description:"Complete Syllabus Detailed Notes",
+        url:"https://drive.google.com/file/d/1yvxM1QMqP2J1v6MIthvQRxUij6zmHN1Y/view?usp=drive_link"
+      },
+    ]
   },
   {
     id: "EC39201",
