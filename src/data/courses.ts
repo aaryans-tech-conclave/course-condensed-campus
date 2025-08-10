@@ -821,18 +821,23 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 4,
     season: "",
     instructor: "Goutam Das",
-    description: "",
+    description: "This course might be difficult, the content is covered entirely in the NPTEL lecture, follow it entirely, questions show up from the BP Lathi Book, doing all the solved examples and trying the exercises will help you understand the subject better. If you find yourself a day before the EndSem not having have studied the syllabus at all, do the NPTEL in a reverse order and memorise the the techniques instead of the just the formula: the Endsems are applicative, not just a formulae showcase.",
     schedule: {
       days: [],
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/file/d/1AUrGtHYRVX33RylBRer_uUe9zwo-orXq/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC31203&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"NPTEL Analog Communication Gourab Das",
+        url:"https://nptel.ac.in/courses/117105143"
+      }
+    ]
   },
   {
     id: "EC39005",
