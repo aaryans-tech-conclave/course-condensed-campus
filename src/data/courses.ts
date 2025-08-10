@@ -736,6 +736,71 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     season: "",
     instructor: "Sharba Bandyopadhyay",
     description: "",
+    isLab:true,
+    labReports:[
+      {
+        linkText:"DSP Lab Report 1",
+        description:"",
+        url:"https://drive.google.com/file/d/1z-05SJatKv6TqMQTuncIGDsXFXC4FhmS/view?usp=drive_link"
+      },
+      {
+        linkText:"DSP Lab Report 2",
+        description:"",
+        url:"https://drive.google.com/file/d/1vwK-YTN37yzNx4dhocFdlX2wZHV1FtKf/view?usp=drive_link"
+      },
+      {
+        linkText:"DSP Lab Report 3",
+        description:"",
+        url:"https://drive.google.com/file/d/1ohlKvjBzUJWf1Ff2s1rOdTZw6yNB-Bax/view?usp=drive_link"
+      },
+      {
+        linkText:"DSP Lab Report 4",
+        description:"",
+        url:"https://drive.google.com/file/d/1qOwwtBl0dbneFlunhIu2K-F7i_wSezMB/view?usp=drive_link"
+      },
+      {
+        linkText:"DSP Lab Report 5",
+        description:"",
+        url:"https://drive.google.com/file/d/1TigmUZkQnq_m2bhBm-ZpVRXBfGuALELb/view?usp=drive_link"
+      },
+    ],
+    labManuals: [
+      {
+        linkText: "DSP Lab Experiment 1",
+        description: "Sampling",
+        url: "https://drive.google.com/file/d/1vJRAwOgkl9CH-8N6Klr1dTZh0Jdgtc1u/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 2",
+        description: "Designing LPF using Windowing",
+        url: "https://drive.google.com/file/d/1xoBFS9yy5R6KE0e8nPLzi8I86HcVBsid/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 3",
+        description: "DTMF Coder/Decoder",
+        url: "https://drive.google.com/file/d/1lxkfBfH_UdJZe5xHLCApRXX2jub-9EZs/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 4 (1)",
+        description: "Spech Recognition Lab Manual",
+        url: "https://drive.google.com/file/d/1tlC04V8sPjBz_i2HtiY0KCih3Pp2Ko04/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 4 (2)",
+        description: "Speech Recognition Temporal paper 1",
+        url: "https://drive.google.com/file/d/1mhj59tsguIOGJ5gC9OaRXVJYGZ3hOHYI/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 4 (3)",
+        description: "Speech Recognition Temporal paper 2",
+        url: "https://drive.google.com/file/d/1cX2-vAoBTftWPPHlFORSjPmyiDYVixWG/view?usp=drive_link"
+      },
+      {
+        linkText: "DEC Lab Experiment 5",
+        description: "Power Spectrum Estimation",
+        url: "https://drive.google.com/file/d/1iKqw9VbLh3sLHl8zRcp0OV4Y0iwadYf-/view?usp=drive_link"
+      },
+    ],
     schedule: {
       days: [],
       time: "",
