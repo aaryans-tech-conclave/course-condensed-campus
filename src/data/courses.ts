@@ -847,7 +847,122 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 2,
     season: "",
     instructor: "Rajat Roy",
-    description: "",
+    isLab: true,
+    labManuals:[
+      {
+        linkText:"Experiment 1",
+        description:"Waveguide Bench",
+        url:"https://drive.google.com/file/d/1-X6MwOj1iOGQuHa9AVaCS6WLqIq_j6JQ/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 2",
+        description:"Measurement of Unknown Impedance",
+        url:"https://drive.google.com/file/d/1PHHTgP67PbkN0Q7QsVNNHnhfeJn2q75D/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 3",
+        description:"Gunn Diode",
+        url:"https://drive.google.com/file/d/1_i7dBoSlBeKyukf1X-pkxsOFqx7CB4U-/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 4",
+        description:"Antenna",
+        url:"https://drive.google.com/file/d/15zo5DCmkHg-rp1nOzEJcVcyd3cuvci3Q/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 5",
+        description:"Simulation Study",
+        url:"https://drive.google.com/file/d/1T_k8SagIR5FBvd80zU6sKB214L_AEdTi/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 6",
+        description:"Passive Components",
+        url:"https://drive.google.com/file/d/1YcWn6nRKI9bgpeFP8Msq2hSOxrOsP-h8/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 7",
+        description:"Ring Resonator",
+        url:"https://drive.google.com/file/d/1Mu4llB4XVyKgwgjWq5yRkyYqMP0I6NMb/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 8",
+        description:"Amplifier",
+        url:"https://drive.google.com/file/d/1smHo2Pe61TpgI5gHYHDCHIrXhogu91BP/view?usp=drive_link"
+      },
+    ],
+    labReports:[
+      {
+        linkText:"Experiment 1 & 2",
+        description:"Slotted Line & Unknown Impedance Kumar Aaryan",
+        url:"https://drive.google.com/file/d/1T-BwaJ4kvilLrMi-gSMptZVcp2P_hUAJ/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 3",
+        description:"Gunn Diode",
+        url:"https://drive.google.com/file/d/12-g25LINQ0HWh0kPyrvlG_KNzMflZpH9/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 8",
+        description:"Amplifier",
+        url:"https://drive.google.com/file/d/1MIRFyJ7PWNBKllVrsjfgRWYbywndo-xP/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 5 (1)",
+        description:"Simulation Passive Components on Microstrip Line",
+        url:"https://drive.google.com/file/d/1ZuZrc07kX1rACzvMRCE5aRn14CTcBZ38/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 5 (2)",
+        description:"Simulation Patch Antenna",
+        url:"https://drive.google.com/file/d/1qNMSFtA6pioAw4eOKei3RShPzY5ELOZ0/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 4",
+        description:"RF Characteristics of Antenna (Horn and Dipole)",
+        url:"https://drive.google.com/file/d/1Ty6tLZt0oS3zSxL3QoyXzWJICRqOIWKJ/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 6",
+        description:"RF Characteristics of Passive Components",
+        url:"https://drive.google.com/file/d/13SXGFQwLQp6Vg1StF14FkkDk2XNL33_B/view?usp=sharing"
+      },
+      {
+        linkText:"Experiment (?)",
+        description:"RF Characteristics of a Schottky Junction",
+        url:"https://drive.google.com/file/d/1aDHnFuzUlbuyUmFvbdI7vuu7rsuryyG_/view?usp=sharing"
+      },
+      {
+        linkText:"Experiment 8",
+        description:"RF Microwave Amplifier Characteristics (A and AB)",
+        url:"https://drive.google.com/file/d/1r45idQyCyvb0suRDEKgQ_282X5uUjqyJ/view?usp=sharing"
+      },
+      {
+        linkText:"Experiment 5(1)",
+        description:"Simulation Passive Components on Microstrip Line",
+        url:"https://drive.google.com/file/d/1pdkBKdxIkqeUdATJyjGX-pOrqzsvDjF0/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 5(2)",
+        description:"Simulation of Patch Antenna",
+        url:"https://drive.google.com/file/d/1Y8Fg-9xdFHDbyfhs0QshGz3iXyo9Pd1l/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 1",
+        description:"Slotted Line Measurement",
+        url:"https://drive.google.com/file/d/1rAevJlJhiDAICF5lJoIzlwg8wdKk5ksP/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment (?)",
+        description:"Study of Rectangular Waveguides",
+        url:"https://drive.google.com/file/d/1FDR1Q099k5V4NhOozpy8uzTaduRmDbO-/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 8",
+        description:"RF Microwave Amplifier Characteristics (A and AB)",
+        url:"https://drive.google.com/file/d/1r45idQyCyvb0suRDEKgQ_282X5uUjqyJ/view?usp=sharing"
+      },
+    ],
+    description: "I've attached reports from multiple sources, hopefully exhausting the entire experiment set atleast once, ensure that you read multple different reports for each experiment before you decide to begin writing and understanding your experiments, it'll help you understand exactly what the professor correcting your lab record looks for, so you wouldn't lose unnecessary marks anywhere.",
     schedule: {
       days: [],
       time: "",
@@ -858,7 +973,16 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"Alternate Lab Report Source(3) (Complete)",
+        url:"https://drive.google.com/file/d/1jJsOw6c7eRcjZ8a82ryzu-CYxwb7iJhj/view?usp=drive_link"
+      },
+      {
+        description:"Alternate Lab Report Source(4) (Complete)",
+        url:"https://drive.google.com/file/d/1Y8cCGZEz5mPtEiUgiQYqOsR8FIlVQBXd/view?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC31005",
