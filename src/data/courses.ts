@@ -992,16 +992,16 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 4,
     season: "",
     instructor: "Arijit De",
-    description: "",
+    description: "The Textbook is exhaustively the entire syllabus, you wont need anything more than it, memorize the proofs since the question paper arrives in a subjective manner. You may want to attend class, a bias based on your attendance may influences your final grade.",
     schedule: {
       days: [],
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/file/d/1Dnise4w0Zw_A7jqaz0VFA_Cxdcf8yRyu/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC31005&exam=midsem%2Cendsem%2Cct",
     note: "",
     additionalLinks: []
   },
