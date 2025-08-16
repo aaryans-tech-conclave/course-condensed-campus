@@ -1013,18 +1013,76 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 4,
     season: "",
     instructor: "Debashis Sen",
-    description: "",
+    description: "Follow the slides, the questions on the paper are theoretical and grading reflects how well you either rewrite the slides on your answer sheets exactly, or understand the concepts convincingly enough. Remember to include all the keywords mentioned in class when the Professor goes over the slides, marking is almost based on a keyword based search on your answer sheet.",
     schedule: {
       days: [],
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/file/d/13I6fXFemE5IdI6xiyHswyqI3IFJ_jH3e/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC31205&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"Syllabus Index",
+        url:"https://drive.google.com/file/d/1_eyExDWTeLtz86MI1Hyl9ntl1Tz2Bi9q/view?usp=drive_link"
+      },
+      {
+        description:"Course Presentations",
+        url:"https://drive.google.com/drive/folders/1GtIUQ8IqA9q3CW-yL12lbNlLRtuXVBpg?usp=drive_link"
+      },
+    ],
+    assignments:[
+      {
+        description:"Syllabus: Upto Midsem, to write Handwritten Solutions",
+        linkText:"Model Question Paper 1",
+        url:"https://drive.google.com/file/d/1rQGk4i0kKM6ceZEYCD92kLYFHujmIKjI/view?usp=drive_link"
+      },
+      {
+        description:"Syllabus: Upto Endsem",
+        linkText:"Model Question Paper 2",
+        url:"https://drive.google.com/file/d/1YzUSKTDoIbQGX9pfFiJO1mD7H5hhcJRj/view?usp=drive_link"
+      },
+      {
+        description:"Coding Problem Statement",
+        linkText:"Coding Assignemnt 2",
+        url:"https://drive.google.com/file/d/1oXISk0kAljFcfgD3fV75ebOjyXhMHoko/view?usp=drive_link"
+      }
+    ],
+    assignmentSolutions:[
+      {
+        description:"",
+        linkText:"Model QP 1 Solutions",
+        url:"https://drive.google.com/file/d/1HiQW9VJVzIJkETLNXQU7ddV428eupyT6/view?usp=drive_link"
+      },
+      {
+        description:"",
+        linkText:"Model QP 2 Solutions",
+        url:"https://drive.google.com/file/d/1pYERVzs2LjRx8tyauFVbSsO2MJs-KSHr/view?usp=drive_link"
+      },
+      {
+        description:"Notebook Print",
+        linkText:"Coding Assignment 1",
+        url:"https://drive.google.com/file/d/1Ne1G8kDiW25mIpIe9gJg6F4fDkb02YYW/view?usp=drive_link"
+      },
+      {
+        description:"Assignment 1 Python Code File",
+        linkText:"Coding Assignment 1",
+        url:"https://drive.google.com/file/d/1Ba06cAH9mlQFak75cuxkOoCx_XIjgCsy/view?usp=drive_link"
+      },
+      {
+        description:"Assignemnt 2 Python Code File",
+        linkText:"Coding Assignment 2",
+        url:"https://drive.google.com/file/d/1FGvpJ0sSVFKZt4wA1jOmcsKOTp6vCP5T/view?usp=drive_link"
+      },
+      {
+        description:"Handwritten Working Solution",
+        linkText:"Coding Assignment 2",
+        url:"https://drive.google.com/file/d/1hFwYosbncNNSK4W0WYFspEomG8xCb-kV/view?usp=drive_link"
+      },
+    ]
   },
   {
     id: "EC31201",
