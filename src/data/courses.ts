@@ -1199,30 +1199,79 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     instructor: "Jithin R",
     description: "",
     isLab: true,
-    labReports: [
-      {
-        linkText: "Experiment 1",
-        description: "Basic Filter Design",
-        url: "https://drive.google.com/file/d/12vpZbvBIK8tjdJMFCk-jwMACEPcdJIua/view?usp=drive_link" // Available
-      },
-      {
-        linkText: "Experiment 2",
-        description: "Switching Modulator and Envelope Detector",
-        url: "https://drive.google.com/file/d/1doWKpqIyeFo8iZ37Krvq01ZM9upxIQy6/view?usp=drive_link" // Available
-      },
-      
-    ],
     labManuals: [
       {
         linkText: "Experiment 1",
         description: "Basic Filter Design",
-        url: "https://drive.google.com/file/d/1TVajGultzmxyhC0IDrqkKI3KtcCOGDny/view?usp=drive_link" // Available
+        url: "https://drive.google.com/file/d/1TVajGultzmxyhC0IDrqkKI3KtcCOGDny/view?usp=drive_link"
       },
       {
         linkText: "Experiment 2",
         description: "Switching Modulator and Envelope Detector",
-        url: "https://drive.google.com/file/d/192pMPM1RmOZFgySBSG8H-vaErqGr2CmY/view?usp=drive_link" // Available
+        url: "https://drive.google.com/file/d/192pMPM1RmOZFgySBSG8H-vaErqGr2CmY/view?usp=drive_link"
       },
+      {
+        linkText: "Experiment 3",
+        description: "Amplitude Modulation",
+        url: "https://drive.google.com/file/d/1EMDOMzdB0PZhRCoQ7juKFm2C80ceCOtp/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 4",
+        description: "Frequency Modulation",
+        url: "https://drive.google.com/file/d/1IJher-BZ53WqhJiG0LQCGH16nQKCN_Nc/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 5",
+        description: "FM Demodulation",
+        url: "https://drive.google.com/file/d/1cYjHkBMg4tHjIfqBDItAbchdLII8zV8x/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 6",
+        description: "Sampling",
+        url: "https://drive.google.com/file/d/1Cfnh6LT1PDz0b3Q_uSzjiZ3jofMPCTF1/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 7",
+        description: "Analog to Digital Conversion",
+        url: "https://drive.google.com/file/d/1ETN4sn7ab5yPeA2Y6Zh0IBIXgPozQwFN/view?usp=drive_link"
+      }
+    ],
+    labReports: [
+      {
+        linkText: "Experiment 1",
+        description: "Basic Filter Design",
+        url: "https://drive.google.com/file/d/12vpZbvBIK8tjdJMFCk-jwMACEPcdJIua/view?usp=drive_link" 
+      },
+      {
+        linkText: "Experiment 2",
+        description: "Switching Modulator and Envelope Detector",
+        url: "https://drive.google.com/file/d/1doWKpqIyeFo8iZ37Krvq01ZM9upxIQy6/view?usp=drive_link" 
+      },
+      {
+        linkText: "Experiment 3",
+        description: "Amplitude Modulation",
+        url: "https://drive.google.com/file/d/1FyVrE9WrwA0pbJP-cgGKzzw8PeCfkOpj/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 4",
+        description: "Frequency Modulation",
+        url: "https://drive.google.com/file/d/1SZN-lo7QGV4R9ybMC7RAa3E1crqWElrL/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 5",
+        description: "FM Demodulation",
+        url: "https://drive.google.com/file/d/1ROHK0SUX1X7pH049roVPtUAqoBJ9ImgD/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 6",
+        description: "Sampling",
+        url: "https://drive.google.com/file/d/1yfmhpiBo-QpnVp2X_EIvvU9e8l9vrIcs/view?usp=drive_link"
+      },
+      {
+        linkText: "Experiment 7",
+        description: "Analog to Digital Conversion",
+        url: "https://drive.google.com/file/d/1cTecp9OVV1WgR2H1R4s9lveFQ2lwt49v/view?usp=drive_link"
+      }
     ],
     schedule: {
       days: [],
