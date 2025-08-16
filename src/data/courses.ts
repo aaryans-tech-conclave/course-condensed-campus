@@ -1098,12 +1098,96 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/file/d/17WshLefmvTVtW4uOEF9m8L_NVmyCyYdo/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC31201&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"Endsem Slides",
+        url:"https://drive.google.com/drive/folders/1jZjzjr2E7WNFEbm22L81HeUcvl1oRoxX?usp=drive_link"
+      },
+      {
+        description:"Alternate DSP Assignment Solutions",
+        url:"https://drive.google.com/drive/folders/1VugWAUqVcRvp0rIcWBTli_iYDF8ZEj0u?usp=drive_link"
+      }
+    ],
+    assignments:[
+      {
+        linkText:"Assignment 1",
+        description:"",
+        url:"https://drive.google.com/file/d/1u2-1GBva57mBpDJ2SerkCNCV-2iMPSqo/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 2",
+        description:"",
+        url:"https://drive.google.com/file/d/1XxGORF1dyrSZ_YSXcLIaKSGyJQa2tiC5/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 3",
+        description:"",
+        url:"https://drive.google.com/file/d/14tp16vQKWLA1Ef71iyz7ghOsK3aRnyEU/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 4",
+        description:"",
+        url:"https://drive.google.com/file/d/1zd6vjhAySwIm_jLMkmenSCgzutG-rl_F/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 5",
+        description:"",
+        url:"https://drive.google.com/file/d/1wt6T7AndxzjgVxH4QZ2xrHfIeJp4nfEQ/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 6",
+        description:"",
+        url:"https://drive.google.com/file/d/1QiPjcFFYJUewnqvi4mmaZ3Rm01Y-Sr69/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 7",
+        description:"",
+        url:"https://drive.google.com/file/d/1Xy1evgUB5tgE3qpzCC64LqXy8cZroYti/view?usp=drive_link"
+      },
+    ],
+    assignmentSolutions: [
+  {
+    linkText: "Assignment 1 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1Kgmr9jwcle_rsf5J4UU3YMpZBckaqQo-/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 2 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1kX3npR_lnsBX1HfDJJPoOvgTRcNh9DG2/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 3 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1c_M2VHtNf6L0ZfdfjW0tryZeSe8Jpmhx/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 4 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1sL0H1kziF1YHfjYw5SzFV23DtPvPNJio/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 5 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1ZOBJc09vVcV-O3Y13Mw_RlRtbytOLx06/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 6 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1HL42_9xexPj-fzGknUCgrgyV5Kuis6O2/view?usp=drive_link"
+  },
+  {
+    linkText: "Assignment 7 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1KybzwdlCnInO9KQuypZJ6eyMGlNDeNuI/view?usp=drive_link"
+  }
+]
+
   },
   {
     id: "EC39001",
