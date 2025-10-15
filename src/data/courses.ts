@@ -1110,7 +1110,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       },
       {
         description:"Alternate DSP Assignment Solutions",
-        url:"https://drive.google.com/drive/folders/1VugWAUqVcRvp0rIcWBTli_iYDF8ZEj0u?usp=drive_link"
+        url:"https://drive.google.com/drive/folders/14UTPEfW7aE5fFMuqgVNXe1870VA2y-De?usp=drive_link"
       }
     ],
     assignments:[
