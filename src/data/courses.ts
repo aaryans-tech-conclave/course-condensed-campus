@@ -1372,9 +1372,14 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
-    note: "",
-    additionalLinks: []
+    questionPapers: "https://qp.metakgp.org/?query=EC30202&exam=midsem%2Cendsem%2Cct",
+    note: "The Syllabus for this course isn't vast, follow the NPTEL Lecture for this course, your syllabus can only be a subset of this course link, make notes and remember facts, expect the examinations to be theoretical, or even reflections of previous ones. My tip? See all the pyqs even before you start studying, note and remember the solutions, then follow the NPTEL Course and finally look through you PYQs again, can't not get an EX after that.",
+    additionalLinks: [
+      {
+        description:"NPTEL Course Link",
+        url:"https://nptel.ac.in/courses/117105078"
+      },
+    ]
   },
   {
     id: "EC31004",
