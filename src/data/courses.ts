@@ -1299,12 +1299,61 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       time: "",
       location: ""
     },
-    textbook: "",
-    otherReferenceMaterial: "",
-    notes: "",
-    questionPapers: "",
-    note: "",
-    additionalLinks: []
+    textbook: "https://drive.google.com/file/d/1H95zh6MmrBUurSzgAtbl82RMcM1uZjHn/view?usp=drive_link",
+    otherReferenceMaterial: "https://drive.google.com/file/d/1-HXlJInnLG4mWC7pIngRxpoC7r7WWwsY/view?usp=drive_link",
+    notes: "https://drive.google.com/file/d/1fwZVec_7Y-YsmHftcfXjKsiSyZK2B2AJ/view?usp=drive_link",
+    questionPapers: "https://qp.metakgp.org/?query=EC31204&exam=midsem%2Cendsem%2Cct",
+    note: "The Syllabus is well defined, the professor outlines this well on a Teams Channel for the course, ensure you follow the material, it's a lot, but outlines the syllabus well. My advice, pick Wozencraft and finish everything you find useful, maybe start to finish, a little integrals hurt nobody. Pick the probability text Sir mentions to follow, and once these two are out of the way, all the other course contents would fit right in place. I liked the mathematics behind the subject the most, this way might not be optimal to get you an EX, but would be enough for an A/B but with a great understanding of the course. For an EX follow the course, attend your classes and pratice all the problems from the Texts and PYQs, expect repeated questions from books and papers, practice them and you're good to go.",
+    additionalLinks: [
+      {
+        description:"Exhaustive List of Problem Source Books & Sols",
+        url:"https://drive.google.com/drive/folders/1sIRYHQGW_nuMqkvfewYLJ62AyDzwTiHe?usp=drive_link",
+      },
+      {
+        description:"Quiz 1",
+        url:"https://drive.google.com/file/d/1QfKliK69MuJVLaySzSwBE2hmwACkVLQd/view?usp=drive_link"
+      },
+      {
+        description:"Rate Optimization Games",
+        url:"https://drive.google.com/file/d/1V2tDbUZspTVqAO4iei_V3OJD7H9DSU6G/view?usp=drive_link"
+      },
+      {
+        description:"Some Communication II Papers",
+        url:"https://drive.google.com/file/d/183df0Hmz4egETFP9jCgrosZRMfeKJ9dJ/view?usp=drive_link"
+      },
+      {
+        description:"Notes Upto Midsem",
+        url:"https://drive.google.com/file/d/1mQ8eTVppRUZsOGo0LkqQ6uIV3-btiwN3/view?usp=drive_link",
+      },
+      {
+        description:"Notes Post Midsem",
+        url:"https://drive.google.com/file/d/1re2NPtJKb3BqPY_BB3dksEoJ0REOYHzI/view?usp=drive_link",
+      },
+      {
+        description:"Notes Post CT3",
+        url:"https://drive.google.com/file/d/1gbPQ6iP7yrOzeH9SVI7ZYm1iq0_ILt3O/view?usp=drive_link",
+      },
+    ],
+    assignments:[
+      {
+        linkText:"Assignment 1",
+        description:"",
+        url:"https://drive.google.com/file/d/10rL6LrVT-s9WLdYNOLndgrvYOFi6wvfD/view?usp=drive_link"
+      },
+      {
+        linkText:"Assignment 2",
+        description:"",
+        url:"https://drive.google.com/file/d/1g6CyW1HM7uihXwrrTyKHCbSRmfdkEB3J/view?usp=drive_link"
+      },
+    ],
+    assignmentSolutions: [
+  {
+    linkText: "Assignment 2 Solutions",
+    description: "",
+    url: "https://drive.google.com/file/d/1XpTN-xnUR2CBkq_WUO9jAzpd0o6JxuCl/view?usp=drive_link"
+  },
+    ]
+    
   },
   {
     id: "EC30202",
