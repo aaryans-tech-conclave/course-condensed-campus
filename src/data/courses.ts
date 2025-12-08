@@ -1448,7 +1448,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC31202&exam=midsem%2Cendsem%2Cct",
     note: "Do the Back exercises of the books, I've added a solutions manual for this purpose, you'll find out that these exercises are what actually show up on your exams. DSP-2 will be a breeze when you figure out how to do the questions on your own, after looking at a few solutions.",
     additionalLinks: [
       {
@@ -1470,6 +1470,18 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       {
         description:"Proakis Old Edition (3rd)",
         url:"https://drive.google.com/file/d/1K0lZNbTAp-WOQtHXmWWb8rP9cwIBKj4c/view?usp=drive_link",
+      },
+      {
+        description:"Wavelets and Wavelet Transforms",
+        url:"https://drive.google.com/file/d/17MiJ5pFyy3rOXD1qYZS110A5pgZ1QzHH/view?usp=drive_link",
+      },
+      {
+        description:"Midsem Material",
+        url:"https://drive.google.com/drive/folders/15OfjhhpIG3R6UEZmsr6d_wtWNY2tjLSa?usp=drive_link"
+      },
+      {
+        description:"Endsem Material",
+        url:"https://drive.google.com/drive/folders/1DxrkzAPhI_OaBev_hVF8MR3BJMC_wCyY?usp=drive_link"
       },
     ]
   },
