@@ -1396,11 +1396,36 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       location: ""
     },
     textbook: "",
-    otherReferenceMaterial: "",
-    notes: "",
-    questionPapers: "",
-    note: "",
-    additionalLinks: []
+    otherReferenceMaterial: "https://drive.google.com/drive/folders/1kxyQ3OFB5qu7JVbQIsmZi7r4C-vIuvVo?usp=drive_link",
+    notes: "https://docs.google.com/document/d/1ABETfXl9Z3fUiC12oUAJIIh3bDJCuBVz3kcl9SURcVg/edit?tab=t.0",
+    questionPapers: "https://qp.metakgp.org/?query=EC31004&exam=midsem%2Cendsem%2Cct",
+    note: "There's a lot of both structured and unstructured material for this course, here notes happen to be the former and the textbook unfortunately the latter. My Tip? Follow the youtube lecture series (a perious year recording) for this course, then use the notes, I never personally found the textbook useful but maybe look at the book's exercises if you have time. Definitely look at the pyqs, and theres always a fabrication 10 marker on the endsem, so you know what to memorize right before your exams. The videos singlehandedly (albeit at 2x speed and a few skips in the middle) reduced my endsem prep time down to 7 hours before the exam, I'd suggest studying this series the week before and even with no attendance an A/EX should be achievable (if you look at your pyqs, or hope that the fabrication question gets you upto the B grade).",
+    additionalLinks: [
+      {
+        description:"Previous Year Recording",
+        url:"https://www.youtube.com/playlist?list=PLzV_ePoZHqWMPztxQ62ELNCRx-aKanf9R",
+      },
+      {
+        description:"Rabaey Textbook",
+        url:"https://drive.google.com/file/d/1kfGMbXkHbZeFieBopFY9VUFvz4XBpDCC/view?usp=drive_link",
+      },
+      {
+        description:"Rabaey Solutions",
+        url:"https://drive.google.com/file/d/1yugRNsGFuLNiy9Lql6s1HHYPx56iSVTI/view?usp=drive_link",
+      },
+      {
+        description:"Kang Textbook",
+        url:"https://drive.google.com/file/d/1JsgjXdhMDQsHd1IRQU_eeEJhoJvM6a4p/view?usp=drive_link",
+      },
+      {
+        description:"Kang Solutions",
+        url:"https://drive.google.com/file/d/12sdeGjd4WfGMpNCXOLsrfeIIcMbn28rV/view?usp=drive_link"
+      },
+      {
+        description:"Notes Till Midsem",
+        url:"https://drive.google.com/file/d/1wYMhk4S90CDrwoJzCbvhtEwoVFXNtj_p/view?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC31202",
