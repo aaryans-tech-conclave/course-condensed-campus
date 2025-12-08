@@ -1435,7 +1435,11 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 4,
     season: "",
     instructor: "Arijit De",
-    description: "",
+    description: `Lots of material, but you only need to follow a few things (textbooks only please). For the midsem follow Proakis Chapter 11 (Multi Rate Signal Processing, I've attached both the new edition's chapter and the old one as well), for the Endsem: Wavelets and Wavelet Transforms, C Sydney Burrus, it looks complicated (because its in latex), but if you read it slowly it makes your life much easier than half cooked books with horrible symbols. Follow the symbol style and equation representations from this book, its easier to read and more intuitive. My advice:
+
+- Follow the old version for the midsemester, its structured more intuitively.
+- also theres a small typo (incorrect formula) within it, which maybe was corrected in the new edition, but you finding out this mistake is what makes engineering worthwhile, find it, write it down and move on (don't waste 2.5 hrs like me once I found it, I thought I was wrong)
+- everything else in this book is good and makes the content very intuitive for your exams, the 4th edition seems to lose this intuitive format in all its good looking latex.`,
     schedule: {
       days: [],
       time: "",
@@ -1445,8 +1449,29 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     otherReferenceMaterial: "",
     notes: "",
     questionPapers: "",
-    note: "",
-    additionalLinks: []
+    note: "Do the Back exercises of the books, I've added a solutions manual for this purpose, you'll find out that these exercises are what actually show up on your exams. DSP-2 will be a breeze when you figure out how to do the questions on your own, after looking at a few solutions.",
+    additionalLinks: [
+      {
+        description:"Ch 11 Multirate Signal Processing (New Edition)",
+        url:"https://drive.google.com/file/d/1kvRfqYskaaxOZLmFqoPSB-vnV9JMeQdq/view?usp=drive_link"
+      },
+      {
+        description:"Ch 11 Multirate Signal Processing (Old Edition)",
+        url:"https://drive.google.com/file/d/1kvRfqYskaaxOZLmFqoPSB-vnV9JMeQdq/view?usp=drive_link"
+      },
+      {
+        description:"Proakis New Edition (4th)",
+        url:"https://drive.google.com/file/d/1kIUqGGB7itPRUJj_9fE1d3haBbuF76bv/view?usp=drive_link",
+      },
+      {
+        description:"Solution Manual Proakis New Edition (4th)",
+        url:"https://drive.google.com/file/d/1_CRmjSZmqWl4lGXdeS5EdFR9wTM4Et8j/view?usp=drive_link"
+      },
+      {
+        description:"Proakis Old Edition (3rd)",
+        url:"https://drive.google.com/file/d/1K0lZNbTAp-WOQtHXmWWb8rP9cwIBKj4c/view?usp=drive_link",
+      },
+    ]
   },
   {
     id: "EC39202",
