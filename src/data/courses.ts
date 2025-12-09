@@ -147,7 +147,7 @@ export const courses: Course[] = [
     },
     textbook: "https://drive.google.com/file/d/1y5rBtMhQ1FKW0E6_VZIQrcOD56Bz_pTE/view?usp=drive_link",
     otherReferenceMaterial: "https://drive.google.com/file/d/1GiGolco1TIk9sLpeHc50BuLzJyeDcGEI/view?usp=drive_link",
-    notes: "",
+    notes: "https://drive.google.com/drive/folders/1HAdM-mjI5gkdhG8Roj-Gcjl4KXPGlhXd?usp=drive_link",
     questionPapers: "https://qp.metakgp.org/?query=EC21207&exam=midsem%2Cendsem%2Cct",
     note: "Follow Sedra Smith's book for the course. It is a good book and covers all the topics in the course, questions pop up from there. Use Razavi's book for more depth in the topics.",
     additionalLinks: [
@@ -182,6 +182,14 @@ export const courses: Course[] = [
       {
         description: "Problems on differential amplifier",
         url: "https://drive.google.com/file/d/1YVHI9MWbsKltYST95WnZThFc0HrRRi0f/view?usp=drive_link"
+      },
+      {
+        description:"Other Materials",
+        url:"https://drive.google.com/drive/folders/1qxmf5Ubg0t9rj44PRj7DCngWANRT6Tln?usp=drive_link"
+      },
+      {
+        description:"Analog Circuits Drive Link",
+        url:"https://drive.google.com/drive/folders/1Vj70HmIzZezjKWHZrCqAZ6kjDLMR2KA8?usp=drive_link"
       }
     ]
   },
@@ -292,6 +300,13 @@ export const courses: Course[] = [
     instructor: "Anindya Sundar Dhar",
     description: "",
     isLab: true,
+    labManuals:[
+      {
+        linkText:"Lab Manuals",
+        description:"Experiment manuals for some experiments",
+        url:"https://drive.google.com/drive/folders/11QHHcovUrzgQflBLj6UrMkAzONndJDU0?usp=drive_link"
+      }
+    ],
     labReports: [
       {
         linkText: "Analog Lab Experiment 1",
