@@ -1656,12 +1656,55 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       time: "",
       location: ""
     },
+    isLab:true,
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [],
+    labReports:  [
+      {
+        linkText:"Experiment 1",
+        description:"Verilog Simulation Lab 1",
+        url:"https://drive.google.com/file/d/1o7n7HxP8DLUbgO9FMf8gEMRJrXSt3djy/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 2",
+        description:"Verilog Simulation Lab 2",
+        url:"https://drive.google.com/file/d/1G_OsVqRO_MsGv8Fftx0k590wguaHExoT/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 3",
+        description:"Verilog Simulation Lab 3",
+        url:"https://drive.google.com/file/d/1Oz88Z4FcIXEoCzxJY1bXGxFpDf3Z2bkn/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 4",
+        description:"There was no experiment 4 lol",
+        url:""
+      },
+      {
+        linkText:"Experiment 5",
+        description:"Cadence Simulation Lab 1",
+        url:"https://drive.google.com/file/d/1iCNXHyd0mJDhO93GRaB08bWlYuBGhpKO/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 6",
+        description:"Cadence Simulation Lab 2",
+        url:"https://drive.google.com/file/d/1h44jzVDmb2C6vNBikoK3xHdWKRzKpVW1/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 7",
+        description:"Cadence Simulation Lab 3",
+        url:"https://drive.google.com/file/d/1nrENPRtUZqM1IrXL_uShsWTfOXvQLDt-/view?usp=drive_link"
+      },
+      {
+        linkText:"Experiment 8",
+        description:"Cadence Simulation Lab 4",
+        url:"https://drive.google.com/file/d/11pM1zo8gulq7a_O9Kx8Ec2EP07CUr8x8/view?usp=drive_link"
+      }
+    ],
   },
   {
     id: "EC60294",
