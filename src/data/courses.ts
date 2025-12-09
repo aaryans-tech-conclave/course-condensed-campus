@@ -599,7 +599,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       time: "",
       location: ""
     },
-    textbook: "",
+    textbook: "https://drive.google.com/file/d/1XTgye30QPeggrlAPr_C8vjh61dHNahkD/view?usp=drive_link",
     otherReferenceMaterial: "",
     notes: "",
     questionPapers: "https://qp.metakgp.org/?query=EC21206&exam=midsem%2Cendsem%2Cct",
