@@ -593,7 +593,7 @@ export const courses: Course[] = [
 - **1:** Sadiku & Kulkarni, Principles of Electromagnetics. Oxford University Press, Asian Edition.
 - **2:** R. K. Shevgaonkar, Electromagnetic Waves. Tata McGraw Hill.
 
-Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise makes your A to an EX`,
+Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise makes your A to an EX. Follow the linked textbook (Shevgaonkar) closely, the course builds exactly like the book, and naturally questions within the book inspire those that come on your tests`,
     schedule: {
       days: [],
       time: "",
