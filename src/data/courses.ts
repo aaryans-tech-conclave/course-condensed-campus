@@ -109,10 +109,27 @@ export const courses: Course[] = [
     },
     textbook: "https://drive.google.com/file/d/14J9PU_KrYrGFOxn2MHsdm-hA1xtcOy4n/view?usp=drive_link",
     otherReferenceMaterial: "https://drive.google.com/file/d/1e7lYZRtC4VfH1eGHTtxnzfinT2BxPjpz/view?usp=drive_link",
-    notes: "",
+    notes: "https://drive.google.com/drive/folders/1Dib7p5o-hMNWQp5tqsTrBHDnIeXLELt9?usp=drive_link",
     questionPapers: "https://qp.metakgp.org/?query=EC21205&exam=midsem%2Cendsem%2Cct",
     note: "Course is theoretical, so make sure you understand the concepts well. Energy band diagrams are important and routinely asked in the exams.",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"Problem Set",
+        url:"https://drive.google.com/drive/folders/1qvZYVpZgBdDpiaFMMlfcWFbzu2JiUb2q?usp=drive_link"
+      },
+      {
+        description:"Other Books",
+        url:"https://drive.google.com/drive/folders/1DiqLUQGGCAfLEjMn2_xvLSN0n_51SqNq?usp=drive_link"
+      },
+      {
+        description:"Some Important Graphs for Visualization",
+        url:"https://drive.google.com/drive/folders/1nZzVjmC5t7R8EDGwUroUMaK1w16pxIHz?usp=drive_link"
+      },
+      {
+        description:"Devices Drive Link",
+        url:"https://drive.google.com/drive/folders/1_veBbOSoVVwnBS5sR_z-aQdNrjO2_pmY?usp=drive_link"
+      }
+    ]
   },
   {
     id: "EC21207",
