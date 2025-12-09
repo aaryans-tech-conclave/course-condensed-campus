@@ -490,7 +490,7 @@ export const courses: Course[] = [
     },
     textbook: "",
     otherReferenceMaterial: "https://drive.google.com/file/d/1m88iKc1_69UJ5-GqkthQ2xuvIuEz8xa1/view?usp=drive_link",
-    notes: "",
+    notes: "https://drive.google.com/drive/folders/1ZjD1IdBK8MkEXJ5TfILKX2DyV-JVPsFQ?usp=drive_link",
     questionPapers: "https://qp.metakgp.org/?query=EC21204&exam=midsem%2Cendsem%2Cct",
     note: "",
     additionalLinks: [
@@ -517,6 +517,10 @@ export const courses: Course[] = [
       {
         description: "LAOM Sample Exam",
         url: "https://drive.google.com/file/d/1lk6fSMlS1WbJKjTXkqfFWLAnT5NSmAcO/view?usp=drive_link"
+      },
+      {
+        description: "LAOM Drive Link",
+        url:"https://drive.google.com/drive/folders/171Cy5ndMwta91p84HDFbhfpBwqU5b2dd?usp=drive_link"
       }
     ]
   },
