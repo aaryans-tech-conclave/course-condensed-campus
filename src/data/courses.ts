@@ -79,13 +79,17 @@ export const courses: Course[] = [
     },
     textbook: "https://drive.google.com/file/d/1GwmhseRDrAXKO8UwY-wqmnXZky8gV3pP/view?usp=drive_link",
     otherReferenceMaterial: "",
-    notes: "",
+    notes: "https://drive.google.com/drive/folders/1d9GWLAfvjLrWjpoWzBzh4Q1AOHVQ4Qum?usp=drive_link",
     questionPapers: "https://qp.metakgp.org/?query=EC21203&exam=midsem%2Cendsem%2Cct",
     note: "Convolutions are very important in this course. Make sure you understand them well.",
     additionalLinks: [
       {
         description: "Network Theory Assignment Solutions",
         url: "https://drive.google.com/drive/folders/1qqwGw_-HeHi5tWbF6_IKHznHDhpfUnce?usp=drive_link"
+      },
+      {
+        description: "Network Theory Drive Link",
+        url:"https://drive.google.com/drive/folders/1bAF_-kN9obCawoM9ueomKdUkxWQyUDJs?usp=drive_link"
       }
     ]
   },
@@ -187,6 +191,11 @@ export const courses: Course[] = [
         description: "",
         url: "https://drive.google.com/file/d/1tXjIafz39A8cTr7-BtmqMtCwKe4l3PSu/view?usp=drive_link" // Available
       },
+      {
+        linkText: "Alternate Lab Report",
+        description:"",
+        url:"https://drive.google.com/file/d/1EzTtzpIwzoOqYqKUHTubK_bUHzOy1-Ud/view?usp=drive_link"
+      }
     ],
     labManuals: [],
     schedule: {
