@@ -368,7 +368,7 @@ export const courses: Course[] = [
     department: "Mathematics",
     credits: 3,
     season: "",
-    instructor: "",
+    instructor: "Buddhananda Banerjee",
     description: "",
     schedule: {
       days: [],
@@ -377,10 +377,15 @@ export const courses: Course[] = [
     },
     textbook: "",
     otherReferenceMaterial: "",
-    notes: "",
+    notes: "https://drive.google.com/file/d/1IwenB6LPMShm0nv-odDdBcduo5xFOJf7/view?usp=drive_link",
     questionPapers: "https://qp.metakgp.org/?query=MA20205&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: [],
+    additionalLinks: [
+      {
+        description:"Introduction",
+        url:"https://drive.google.com/file/d/11pJh12rZTmyqkM_HGWX9fXyD_YUqczWD/view?usp=drive_link"
+      }
+    ],
     assignments: [
       {
         linkText: "Assignment 1",
