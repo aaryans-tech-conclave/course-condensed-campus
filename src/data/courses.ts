@@ -1493,18 +1493,68 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 2,
     season: "",
     instructor: "Saumik Bhattacharya",
-    description: "",
+    description: "The course might start-off difficult, but after the first class (mostly theoretical), and a bit of consulting the instruction set websites, you'll quickly pick-up writing Assembly Code. Try doing the Codes yourself, instead of relying on LLMs since the TAs ask for justifications for your work, this would help you do well on your final lab exam as well in particular, and would allow you to develop building logic in Assembly in general.",
     schedule: {
       days: [],
       time: "",
       location: ""
     },
+    isLab: true,
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [],
+    labManuals: [
+      {
+        linkText:"Assignment 1",
+        description:"Familiarization with 8051 Kit through Assembly language programming",
+        url:"https://drive.google.com/file/d/1HzjHTcBy6fXLMaFgeqOifxhRYukWNIxO/view?usp=drive_link",
+      },
+      {
+        linkText:"Assignment 2",
+        description:"Four-input Combinational Logic",
+        url:"https://drive.google.com/file/d/1DUTvTWs2SuUq1xBEbCutzmbjYcJBZD7-/view?usp=drive_link",
+      },
+      {
+        linkText:"Assignment 3",
+        description:"Real Time Clock with Stop Watch",
+        url:"https://drive.google.com/file/d/1OszdVHhOtXYmXc3PIZK8ubfHoXMdF1Wd/view?usp=drive_link",
+      },
+      {
+        linkText:"Assignment 4",
+        description:"Interfacing an ADC",
+        url:"https://drive.google.com/file/d/1JFkMsnf8veEvgiaUnEC0h1h0hhsIjB_O/view?usp=drive_link",
+      },
+      {
+        linkText:"Assignment 5",
+        description:"Temperature Controller",
+        url:"https://drive.google.com/file/d/1wIWgTBBdIRPvpLU7iSyj9O26MVi6RaWc/view?usp=drive_link",
+      }
+    ],
+    labReports:[
+      {
+        linkText:"8081 Instruction Set",
+        description:"Handy website for quick review of all 8081 instructions",
+        url:"https://aeb.win.tue.nl/comp/8051/set8051.html",
+      },
+      {
+        linkText:"8081 Instruction Manual",
+        description:"Detailed outline of 8081 Instruction Set",
+        url:"https://developer.arm.com/documentation/101655/0961/8051-Instruction-Set-Manual/Instructions"
+      },
+      {
+        linkText:"Assembly Codes",
+        description:"Assembly Code Solutions for Assignemnts 1 to 4",
+        url:"https://drive.google.com/drive/folders/1lIBgE01PPuMYggch6cuV5YRNwAYYTB9K?usp=drive_link",
+      },
+      {
+        linkText:"Embedded Systems Design Repository",
+        description:"Well documented repository of all our courses Assignments & Solutions",
+        url:"https://github.com/vishwaksen-1/EC39202-Embedded_Systems_Laboratory"
+      }
+    ]
   },
   {
     id: "EC39002",
