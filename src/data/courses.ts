@@ -1714,7 +1714,7 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     credits: 3,
     season: "",
     instructor: "Prasanta Kumar Guha",
-    description: "",
+    description: "Follow the Google Drive Linked, it contains all the PPTs and Materials covered in class, the exam is purely theoretical, you'll be required to remember details and will have to answer theoretical questions with a few comparatively easier numericals sprinkled in between, on your exams.",
     schedule: {
       days: [],
       time: "",
@@ -1723,8 +1723,13 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
-    questionPapers: "",
+    questionPapers: "https://qp.metakgp.org/?query=EC60294&exam=midsem%2Cendsem%2Cct",
     note: "",
-    additionalLinks: []
+    additionalLinks: [
+      {
+        description:"Nanoelectronics Course Contents",
+        url:"https://drive.google.com/drive/folders/1CEYUImDRj6t1kcMas59V_mqBHIHSHUee?usp=drive_link"
+      }
+    ]
   }
 ];
