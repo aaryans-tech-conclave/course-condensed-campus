@@ -305,6 +305,11 @@ export const courses: Course[] = [
         linkText:"Lab Manuals",
         description:"Experiment manuals for some experiments",
         url:"https://drive.google.com/drive/folders/11QHHcovUrzgQflBLj6UrMkAzONndJDU0?usp=drive_link"
+      },
+      {
+        linkText:"Alternate Lab Report",
+        description:"Secondary Source",
+        url:"https://drive.google.com/file/d/10heCA_fUvwdebVEpQD8q4-oAHsiWkPFV/view?usp=drive_link"
       }
     ],
     labReports: [
