@@ -1570,12 +1570,77 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
       time: "",
       location: ""
     },
+    isLab:true,
     textbook: "",
     otherReferenceMaterial: "",
     notes: "",
     questionPapers: "",
     note: "",
-    additionalLinks: []
+    additionalLinks: [],
+    labManuals:[
+      {
+        linkText:"Experiment 1",
+        description:"Line Coding",
+        url:"https://drive.google.com/file/d/1D6cpgs388CuflqKoVVTOoDGKtqqHk6kn/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 2",
+        description:"PN Sequence Generator with LFSR",
+        url:"https://drive.google.com/file/d/168eDaRUAGIm4LiTAKrrMY4_9BeZawEXs/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 3",
+        description:"Delta Modulation",
+        url:"https://drive.google.com/file/d/1Gbh8cAuOzqoEFbnom5M4-2Boch9sUnWX/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 4",
+        description:"BPSK Modulation and Demodulation",
+        url:"https://drive.google.com/file/d/1RiiRrFE2DFBqqwcHzK9J3nwfcY05YKJO/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 5",
+        description:"QPSK Modulation and Demodulation",
+        url:"https://drive.google.com/file/d/1sk-Q3MKvRWCPQJeh64Z1hqGil73HIu3u/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 6 (No Manual As Such)",
+        description:"Simulation of BPSK & QPSK Modulation & Demodulation",
+        url:""
+      }
+    ],
+    labReports:[
+      {
+        linkText:"Experiment 1",
+        description:"Line Coding",
+        url:"https://drive.google.com/file/d/1d2v8nBR16AQHcZD1Y8_Dn9TYkHxX0mio/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 2",
+        description:"PN Sequence Generator with LFSR",
+        url:"https://drive.google.com/file/d/16LoKfjP_8QBcxriW7XW-xbwCbsCXfDHk/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 3",
+        description:"Delta Modulation",
+        url:"https://drive.google.com/file/d/1oy1EcVJ6INzJjLwTiK2r3KdlddnbSOgL/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 4",
+        description:"BPSK Modulation and Demodulation",
+        url:"https://drive.google.com/file/d/1NJPvSeGlrlY729LO7bM5e9aK2fBquByf/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 5",
+        description:"QPSK Modulation and Demodulation",
+        url:"https://drive.google.com/file/d/1j0PAHFR3RHOmnkakjtHUazTiquSehOYL/view?usp=drive_link",
+      },
+      {
+        linkText:"Experiment 6",
+        description:"Simulation of BPSK & QPSK Modulation & Demodulation",
+        url:"https://drive.google.com/file/d/14JKvmWakf6GmX6C2r5NiLP1KtR2Wnn8S/view?usp=drive_link"
+      }
+    ],
   },
   {
     id: "EC39004",
