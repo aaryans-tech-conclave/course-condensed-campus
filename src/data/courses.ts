@@ -1792,9 +1792,9 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
     code: "ME66005",
     name: "THE ATMOSPHERIC GREENHOUSE EFFECT AND GLOBAL WARMING",
     department: "Mechanical Engineering",
-    credits: 3,
+    credits: 1,
     season: "",
-    instructor: "Sandip Mazumder (Guest Lecturer)",
+    instructor: "",
     description: `The objective of this Micro-Credit short course is to introduce students from
 engineering and science disciplines to the fundamentals of radiation transport and
 radiation-matter interactions (interaction of sunlight with atmospheric gases, aerosols, and
@@ -1820,6 +1820,56 @@ sources (databases) of relevant radiative properties, and sources of climate dat
       {
         description:"Assignments",
         url:"https://drive.google.com/drive/u/1/folders/1idTRAVr0p7czx8-xGGyEn_Y2f3Vp_4-N"
+      }
+    ]
+  },
+  {
+    id: "CS60055",
+    code: "CS60055",
+    name: "UBIQUITOUS COMPUTING",
+    department: "Computer Science and Engineering",
+    credits: 3,
+    season: "",
+    instructor: "Sandip Chakraborty",
+    description: ``,
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    },
+    textbook: "",
+    otherReferenceMaterial: "https://sandipc-iitkgp.github.io/sandip-web/teaching.html",
+    notes: "",
+    questionPapers: "https://qp.metakgp.org/?query=CS60055&exam=midsem%2Cendsem%2Cct",
+    note: "",
+    additionalLinks: [
+      {
+        description:"Course Website",
+        url:"https://sandipc-iitkgp.github.io/sandip-web/courses/cs60055/cs60055.html"
+      },
+      {
+        description:"Class Material (Presentations)",
+        url:"https://drive.google.com/drive/folders/1z9nqTvXTj7kCsPrW6S2Q1vNOsqYqZHFL?usp=drive_link"
+      },
+      {
+        description:"Reference Research Papers",
+        url:"https://drive.google.com/drive/folders/1_qIR_CyPc_kAw6qltA1wQLiPhuHX_vWM?usp=drive_link"
+      },
+      {
+        description:"Term Project Material",
+        url:"https://drive.google.com/drive/folders/1NsiDlLT6PpaBI_1z9zWIMxmiaYj1kri-?usp=drive_link"
+      },
+      {
+        description:"2024 Midsem Paper",
+        url:"https://drive.google.com/file/d/1yA17D0LOrk8yge9gW1mi7URStBTGqy6M/view?usp=drive_link"
+      },
+      {
+        description:"2024 Endsem Paper",
+        url:"https://drive.google.com/file/d/14rIJ95fGeu86Oz0ruy0zy5vnanhQKEvE/view?usp=drive_link"
+      },
+      {
+        description:"Euler Angles",
+        url:"https://drive.google.com/file/d/1K-bY_2NV0I8y1Vye1YhzVpin-a_tQ5Uc/view?usp=drive_link"
       }
     ]
   }
