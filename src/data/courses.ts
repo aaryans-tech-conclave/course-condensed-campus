@@ -1786,5 +1786,41 @@ Pro Tip: Attend the classes, attendance give a +10 Boost which you'll realise ma
         url:"https://drive.google.com/drive/folders/1CEYUImDRj6t1kcMas59V_mqBHIHSHUee?usp=drive_link"
       }
     ]
+  },
+  {
+    id: "ME66005",
+    code: "ME66005",
+    name: "THE ATMOSPHERIC GREENHOUSE EFFECT AND GLOBAL WARMING",
+    department: "Mechanical Engineering",
+    credits: 3,
+    season: "",
+    instructor: "Sandip Mazumder (Guest Lecturer)",
+    description: `The objective of this Micro-Credit short course is to introduce students from
+engineering and science disciplines to the fundamentals of radiation transport and
+radiation-matter interactions (interaction of sunlight with atmospheric gases, aerosols, and
+particulates) so that they begin to understand and analyze the relationship between rising
+greenhouse gas concentrations in the Earth’s atmosphere and rising Earth’s temperature.
+The course will introduce them to the laws (equations) governing radiation transport,
+sources (databases) of relevant radiative properties, and sources of climate data.`,
+    schedule: {
+      days: [],
+      time: "",
+      location: ""
+    },
+    textbook: "",
+    otherReferenceMaterial: "",
+    notes: "",
+    questionPapers: "",
+    note: "",
+    additionalLinks: [
+      {
+        description:"MicroCredit Course Contents",
+        url:"https://drive.google.com/drive/u/1/folders/1uwPFfLvTJS3hUV4KPIqyBDj7UGvRMuyw"
+      },
+      {
+        description:"Assignments",
+        url:"https://drive.google.com/drive/u/1/folders/1idTRAVr0p7czx8-xGGyEn_Y2f3Vp_4-N"
+      }
+    ]
   }
 ];

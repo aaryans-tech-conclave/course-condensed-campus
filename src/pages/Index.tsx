@@ -66,7 +66,12 @@ const Index = () => {
   
   const semester6CourseIds = [
     "EC31204", "EC30202", "EC31004", "EC31202",
-    "EC39202", "EC39002", "EC39004", "EC60294"
+    "EC39202", "EC39002", "EC39004", "EC60294","ME66005",
+  ];
+
+  const semester7CourseIds = [
+    "CS60055", "CS61066", "EC60013", "EC60011",
+    "EC60503", "CS21203", "EC48201",
   ];
   
   const getSemesterCourses = (courseIds: string[]) => {
@@ -77,6 +82,7 @@ const Index = () => {
   const semester4Courses = getSemesterCourses(semester4CourseIds);
   const semester5Courses = getSemesterCourses(semester5CourseIds);
   const semester6Courses = getSemesterCourses(semester6CourseIds);
+  const semester7Courses = getSemesterCourses(semester7CourseIds);
   
   const renderCourseTiles = (semesterCourses: typeof courses) => (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -152,9 +158,18 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </TabsContent>
+
+              {/* Semester 7 */}
+              <TabsContent value="7" className="mt-0">
+                <Card>
+                  <CardContent className="p-4">
+                    {renderCourseTiles(semester7Courses)}
+                  </CardContent>
+                </Card>
+              </TabsContent>
               
               {/* Other semesters */}
-              {[7, 8].map(sem => (
+              {[8].map(sem => (
                 <TabsContent key={sem} value={sem.toString()} className="mt-0">
                   <Card>
                     <CardContent className="p-4">
